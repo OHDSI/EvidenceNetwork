@@ -23,5 +23,8 @@ jobs:
               with:
                 target: gh-pages
                 path: docs/src
+                packages:
+                  any::rmarkdown
+                  any::knitr
               env:
                 GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
