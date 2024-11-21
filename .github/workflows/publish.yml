@@ -16,7 +16,7 @@ jobs:
             - name: Set up Quarto
               uses: quarto-dev/quarto-actions/setup@v2
               env:
-                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
             - name: Render and Publish
               uses: quarto-dev/quarto-actions/publish@v2
@@ -24,4 +24,4 @@ jobs:
                 target: gh-pages
                 path: docs/src
               env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
