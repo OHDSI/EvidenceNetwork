@@ -51,7 +51,7 @@ The Evidence Network meets twice a month on Thursdays at 10:30am EST. Please joi
 ::: {.card-body}
 ["Joining the OHDSI Evidence Network was important to me because it  allows us to increase the diversity of patient populations represented in the network, particularly from the Midwest U.S., which is currently underrepresented. I believe that the methods developed by OHDSI can  enhance care and improve patient health within my local healthcare system. The process to join was straightforward, thanks to OHDSI’s collaborative and open-source community, with ample support through documentation, forums, and workgroup calls. By being part of the network, I hope to engage more data  partners so we can tackle challenging clinical problems together, such as rare diseases and rare adverse drug reactions, which are often impossible to address with a single database."]{.card-text}
 
-[Academic Quote Source]{.blockquote-footer}
+[Linying Zhang, Washington Univeristy at St. Louis]{.blockquote-footer}
 :::
 :::
 
