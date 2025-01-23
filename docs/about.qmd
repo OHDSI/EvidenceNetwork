@@ -1,5 +1,57 @@
 ---
-title: "About"
+title: "Value for Data Partners"
 ---
 
-About the OHDSI Evidence Network
+# Unlocking the Value of the OHDSI Evidence Network
+
+The Observational Health Data Sciences and Informatics (OHDSI) Evidence Network is redefining global collaboration in health data research. Much like the ancient Greeks who connected stars into constellations to tell stories, OHDSI connects data partners around the world, transforming disparate datasets into meaningful, actionable evidence that improves patient care. Whether you represent government, academia, or industry, the OHDSI Evidence Network offers unparalleled opportunities to advance science, foster innovation, and achieve real-world impact.
+
+## What is the OHDSI Evidence Network?
+
+The OHDSI Evidence Network is a global community dedicated to connecting researchers with data sources, fostering collaborations that lead to evidence generation. The network’s mission is simple yet profound: to leverage real-world data to improve patient outcomes. Through the adoption of the OMOP Common Data Model (CDM) and open-source tools like Atlas, OHDSI simplifies the process of data integration and analysis, reducing barriers to high-quality research.
+
+## Why Join the OHDSI Evidence Network?
+
+Organizations across government, academia, and industry each have unique motivations for joining the OHDSI Evidence Network. Here are some key benefits for each group:
+
+### 1. For Government Organizations:
+
+**Data Accessibility and Insights**: Agencies like the U.S. Department of Veterans Affairs (VA) have found immense value in transforming their complex datasets into the OMOP CDM. This shift not only reduced the learning curve for researchers but also improved the reliability of evidence generated from their data.
+
+**Collaboration and Innovation**: By participating in OHDSI, government organizations gain access to cutting-edge methodologies, such as large-scale propensity score modeling and negative controls, enabling them to deliver robust, impactful evidence for public health initiatives.
+
+**Mission Alignment**: For entities like the VA, OHDSI’s focus on improving patient outcomes directly aligns with their mission of serving veterans and their families.
+
+### 2. For Academic Institutions:
+
+**Enhanced Research Capabilities**: Participation in OHDSI network studies allows academic researchers to better understand the strengths and limitations of their data. Institutions like IDIAP Jordi Gol in Spain have used OHDSI to improve data quality and generate impactful evidence, particularly during the COVID-19 pandemic.
+
+**Training and Career Development**: The use of standardized tools and collaborative studies provides a rich training ground for students and researchers, fostering skill development and career advancement.
+
+**Visibility and Recognition**: Academic data partners often earn trust and credibility as reliable contributors, opening doors to prestigious opportunities like DARWIN EU, a federated network supporting regulatory decision-making in Europe.
+
+### 3. For Industry Partners:
+
+**Real-World Evidence Generation**: Companies like IQVIA recognize the growing importance of real-world evidence in shaping regulatory and commercial strategies. OHDSI provides a robust framework for integrating and analyzing heterogeneous datasets, driving reliable evidence generation.
+
+**Access to a Talent Pipeline**: With a global community of researchers and practitioners, OHDSI serves as a hub for talent and expertise, helping industry partners stay at the forefront of innovation.
+
+**Leadership and Standards**: OHDSI’s community-driven guidelines ensure high-quality, credible results, allowing industry partners to align their practices with the highest standards.
+
+## The OHDSI Advantage
+
+What sets OHDSI apart is its ecosystem approach. It’s not just about tools or data models—it’s about building a global community dedicated to advancing healthcare. From fostering collaboration to driving methodological innovation, OHDSI provides a platform where data partners can:
+
+Participate in large-scale, high-impact studies.
+
+Leverage standardized tools to simplify complex analyses.
+
+Collaborate with experts across sectors, including academia, government, and industry.
+
+Generate evidence that accelerates scientific discovery and improves patient outcomes.
+
+## A Call to Action
+
+If your organization has data mapped to the OMOP CDM or is considering joining the network, the time to act is now. The OHDSI Evidence Network offers a unique opportunity to contribute to a global effort that’s transforming healthcare research. By joining, you’ll not only enhance your own capabilities but also become part of a movement that’s shaping the future of medicine.
+
+Take the next step and connect with OHDSI. Together, we can light up the sky with evidence, one data partner at a time.
