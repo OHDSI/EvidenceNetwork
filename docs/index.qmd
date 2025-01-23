@@ -9,7 +9,7 @@ about:
   template: jolla
   links:
     - text: '{{< iconify material-symbols:info>}} Why Join?'
-      href: about.qmd
+      href: EvidenceNetwork/about.html
     - text: "{{< iconify material-symbols:forum>}} Forums"
       href: https://forums.ohdsi.org/
     - text: '{{< iconify mdi:blog>}} Network Studies'
