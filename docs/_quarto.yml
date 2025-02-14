@@ -33,7 +33,7 @@ website:
         text: Home
       - href: getting-started/getting-started.qmd
         text: Getting Started
-      - sidebar:resources
+      - sidebar:dataPartners
 
     right:
       - presentations.qmd
@@ -42,12 +42,12 @@ website:
 
   sidebar:
     - id: ""
-    - id: resources
-      title: "Resources"
+    - id: dataPartners
+      title: "Data Partners"
       style: "docked"
       collapse-level: 2
       contents:
-        - auto: resources/*.qmd
+        - auto: dataPartners/*.qmd
     - id: tools
       title: "Tools"
       style: "docked"

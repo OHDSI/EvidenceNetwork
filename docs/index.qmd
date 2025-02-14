@@ -1,6 +1,6 @@
 ---
 title: "OHDSI Evidence Network"
-description: "OHDSI Evidence Network"
+description: "Connecting those who have data with those who need data to generate evidence at scale in accordance with OHDSI's mission."
 format: html
 engine: knitr
 
@@ -12,8 +12,8 @@ about:
       href: EvidenceNetwork/about.html
     - text: "{{< iconify material-symbols:forum>}} Forums"
       href: https://forums.ohdsi.org/
-    - text: '{{< iconify mdi:blog>}} Network Studies'
-      href: https://data.ohdsi.org/OhdsiStudies/
+    - text: '{{< iconify mdi:blog>}} Helpful Links'
+      href: EvidenceNetwork/Overview.html
     - text: '{{< iconify mdi:github>}} GitHub'
       href: https://github.com/OHDSI/EvidenceNetwork
     - text: '{{< iconify mdi:rss>}} RSS'
@@ -38,7 +38,7 @@ OHDSI’s mission - To improve health by empowering a community to collaborative
 
 Evidence Network mission - To connect those who need data with those who have data in order to generate evidence at scale in accordance with OHDSI's mission.
 
-The Evidence Network meets twice a month on Thursdays at 10:30am EST. Please join us on the [MS Teams call](https://teams.microsoft.com/l/meetup-join/19%3aLfldTmDbcMLKkVZLXnRHW16eGF6wbl6hLRpCr6MBlmw1%40thread.tacv2/1705457873853?context=%7b%22Tid%22%3a%22a30f0094-9120-4aab-ba4c-e5509023b2d5%22%2c%22Oid%22%3a%223c193b7f-c2ab-4bcf-b88c-f89a6b1fba38%22%7d)
+The Evidence Network meets the second Thursday of the month at 10:30am EST. Please join us on the [MS Teams call](https://teams.microsoft.com/l/meetup-join/19%3aLfldTmDbcMLKkVZLXnRHW16eGF6wbl6hLRpCr6MBlmw1%40thread.tacv2/1705457873853?context=%7b%22Tid%22%3a%22a30f0094-9120-4aab-ba4c-e5509023b2d5%22%2c%22Oid%22%3a%223c193b7f-c2ab-4bcf-b88c-f89a6b1fba38%22%7d)
 
 
 
@@ -49,24 +49,27 @@ The Evidence Network meets twice a month on Thursdays at 10:30am EST. Please joi
 
 ::: {.index-g-col-4 .card .border-light .mb-3 .text-center}
 ::: {.card-body}
+["The OHDSI community is a well-organized and highly welcoming community of experts who have helped me grow throughout my career. I was  honored to bring European data into the OHDSI Evidence Network because of the importance of a diverse patient population for our global studies. As expected, the support and guidance I received from the community made the process both simple and fulfilling. Heliant Health, along with its data partners in the Balkans region, looks forward to joining this critical  initiative and generate the necessary evidence to improve healthcare."]{.card-text}
+
+[Filip Maljković, Core Tech Lead, Heliant Health]{.blockquote-footer}
+:::
+:::
+
+
+::: {.index-g-col-4 .card .border-light .mb-3 .text-center}
+::: {.card-body}
 ["Joining the OHDSI Evidence Network was important to me because it  allows us to increase the diversity of patient populations represented in the network, particularly from the Midwest U.S., which is currently underrepresented. I believe that the methods developed by OHDSI can  enhance care and improve patient health within my local healthcare system. The process to join was straightforward, thanks to OHDSI’s collaborative and open-source community, with ample support through documentation, forums, and workgroup calls. By being part of the network, I hope to engage more data  partners so we can tackle challenging clinical problems together, such as rare diseases and rare adverse drug reactions, which are often impossible to address with a single database."]{.card-text}
 
-[Linying Zhang, Washington University at St. Louis]{.blockquote-footer}
+[Linying Zhang, Assistant Professor of Biostatistics at the Institute for Informatics, Data Science, & Biostatistics, Washington University at St. Louis]{.blockquote-footer}
 :::
 :::
 
 ::: {.index-g-col-4 .card .border-light .mb-3 .text-center}
 ::: {.card-body}
-["This block would include a quote from a government source."]{.card-text}
+["HealthPartners Institute was motivated to join the OHDSI Evidence  Network to collaborate with organizations around the world and contribute to research that can promote better health and improve care – both locally and on a global scale. Prior to joining, we secured leadership buy-in, IRB approval, and limited funding to support our participation. We felt very supported throughout the process of joining the Evidence Network, and the OHDSI staff were helpful and responsive to questions we had along the way. We look forward to building relationships with other members and participating in workgroups to make meaningful contributions to research in the future. "]{.card-text}
 
-[Government Quote Source]{.blockquote-footer}
+[Sam Patnoe, Senior Programmer Analyst, Research Informatics, Health Partners Institute]{.blockquote-footer}
 :::
 :::
 
-::: {.index-g-col-4 .card .border-light .mb-3 .text-center}
-::: {.card-body}
-["This block would include a quote from an industry source."]{.card-text}
 
-[Industry Quote Source]{.blockquote-footer}
-:::
-:::

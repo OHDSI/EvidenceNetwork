@@ -1,0 +1,37 @@
+---
+hide:
+  - toc
+title: "General Information"
+---
+
+Becoming a Data Partner Organization (DPO) in the OHDSI Evidence Network places your organization at the forefront of observational research. As a DPO, you’ll contribute to an open, collaborative network that connects researchers and organizations, advancing health research outcomes worldwide. The data source contributions of DPOs streamline the OHDSI Evidence Network initiative which strives for alignment between available data and research questions. Not only does joining the evidence network place your data in a network that fosters such research advancement, but also this data partner contribution receives recognition via display on the OHDSI website. The following article outlines the steps necessary to join the OHDSI Evidence Network as a Data Partner Organization.  
+
+ 
+*Note:* The OHDSI Evidence Network Member agrees not to share any patient information that constitutes protected health information or share confidential business information. It is the intent of the OHDSI Coordinating Center to keep all shared information private, but in the event of an external breach, the OHDSI Coordinating Center is not liable for loss of the information. If an OHDSI Evidence Network Member accidentally shares confidential information, the OHDSI Coordinating Center will delete that information to the extent possible at the time of the discovery of the breach. 
+
+## Upon joining the OHDSI Evidence Network as a DPO: 
+
+Organizational Account Access: Once a DPO joins the OHDSI Evidence Network by sending the metadata and concept counts for each participating data source to the OCC, they will receive an organizational OHDSI account (@ohdsi.org). This account identifies them as members of the network and will be used for communication within the OHDSI Teams environment to coordinate OHDSI efforts. The email address will not be shared publicly.  
+
+Data Source Feedback Report: Additionally, the organization will receive a report for each data source submitted to the network. This report will compare each data source to others in the network using network-based benchmarks. The report will include metrics such as concepts unique to the data source, concepts present in other data sources but missing from the submitted data source, and comparisons of demographic representation.  
+
+**Microsoft Teams Access:** Organizations will be added to the OHDSI Microsoft Teams environment to include access to a resource library. 
+
+## Important Details on Sharing Data with the OCC: 
+
+**Permission:** Sending this information to the OCC grants the OCC permission to use this information to support OHDSI Community activities with site name withheld. 
+
+Privately held information: Once the metadata and concept counts are sent to the OCC, the direct contact information for organizational representatives and the site-specific concept counts will be held privately. This information will be accessible only by the OCC in a secure environment. 
+
+Publicly shared information: Only network-level concept counts will be shared as an open public resource. Specifically, this will include the overall network total record count and descendant record count for each concept, as well as the total number of data sources in the network that have at least one record for each concept. 
+
+## Requirements to Join: 
+
+Before proceeding with the necessary steps to become a DPO, consider the following requirements. These four must-have features ensure consistency, transparency, and efficiency in fulfilling the Evidence Network objective: 
+
+- Observational health data standardized to the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) v5.3 or higher
+- Data held in a supported SQL environment accessible by the organization 
+- Approval from IRB or other governance entity to share metadata and concept counts with the OHDSI Coordinating Center (OCC)  
+- A resource (individual) who can run a package in R/RStudio against the data 
+
+ 
