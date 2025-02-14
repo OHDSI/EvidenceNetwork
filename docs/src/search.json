@@ -21,81 +21,11 @@
     "text": "Why Join?\n  \n  \n      Forums\n  \n  \n      Helpful Links\n  \n  \n      GitHub\n  \n  \n      RSS\n  \n  \n      Global Symposium\n  \n\n\n\n\n\n\nWelcome to the OHDSI Evidence Network\nThe Observational Health Data Sciences and Informatics (or OHDSI, pronounced “Odyssey”) program is a multi-stakeholder, interdisciplinary collaborative to bring out the value of health data through large-scale analytics. All our solutions are open-source.\nOHDSI’s mission - To improve health by empowering a community to collaboratively generate the evidence that promotes better health decisions and better care.\nEvidence Network mission - To connect those who need data with those who have data in order to generate evidence at scale in accordance with OHDSI’s mission.\nThe Evidence Network meets the second Thursday of the month at 10:30am EST. Please join us on the MS Teams call\n\n\nCollaborators say…\n\n\n\n\n\n“The OHDSI community is a well-organized and highly welcoming community of experts who have helped me grow throughout my career. I was honored to bring European data into the OHDSI Evidence Network because of the importance of a diverse patient population for our global studies. As expected, the support and guidance I received from the community made the process both simple and fulfilling. Heliant Health, along with its data partners in the Balkans region, looks forward to joining this critical initiative and generate the necessary evidence to improve healthcare.”\nFilip Maljković, Core Tech Lead, Heliant Health\n\n\n\n\n“Joining the OHDSI Evidence Network was important to me because it allows us to increase the diversity of patient populations represented in the network, particularly from the Midwest U.S., which is currently underrepresented. I believe that the methods developed by OHDSI can enhance care and improve patient health within my local healthcare system. The process to join was straightforward, thanks to OHDSI’s collaborative and open-source community, with ample support through documentation, forums, and workgroup calls. By being part of the network, I hope to engage more data partners so we can tackle challenging clinical problems together, such as rare diseases and rare adverse drug reactions, which are often impossible to address with a single database.”\nLinying Zhang, Assistant Professor of Biostatistics at the Institute for Informatics, Data Science, & Biostatistics, Washington University at St. Louis\n\n\n\n\n“HealthPartners Institute was motivated to join the OHDSI Evidence Network to collaborate with organizations around the world and contribute to research that can promote better health and improve care – both locally and on a global scale. Prior to joining, we secured leadership buy-in, IRB approval, and limited funding to support our participation. We felt very supported throughout the process of joining the Evidence Network, and the OHDSI staff were helpful and responsive to questions we had along the way. We look forward to building relationships with other members and participating in workgroups to make meaningful contributions to research in the future.”\nSam Patnoe, Senior Programmer Analyst, Research Informatics, Health Partners Institute"
   },
   {
-    "objectID": "dataPartners/proprietary.html",
-    "href": "dataPartners/proprietary.html",
-    "title": "Proprietary and PHI considerations",
-    "section": "",
-    "text": "In OHDSI, it is the responsibility of each data holder to know, understand and follow local data governance processes related to use of the OMOP CDM. In the United States, these processes will follow your organization’s local interpretation for maintaining compliance to PII and PHI protection. In OMOP CDM implementations containing European Union citizen data, local governance processes will include measures to comply with General Data Protection Regulation (GDPR) [1]. As a community, the OHDSI data network covers more than 500 databases from 49 countries. There is extensive community knowledge on the interpretation of rule sets and exemplar IRB and local governance workflows that can be made available to institutions navigating these processes for the first time. If your organization does not have an established data governance process, please reach out on the OHDSI Forums under “Implementers” and the community can respond with shared guidance from their own deployments. As a community, we aim to conduct research that keeps patient-level data local and share only aggregate results.\nPrivacy preserving processes are not one-size fits all. There are many different rule sets that can be applied to datasets. Data holders are recommended to consult with their local privacy officer(s) to ensure all processes applied to a database are compliant with local interpretation of the selected rule set.\n\nhttps://ohdsi.github.io/CommonDataModel/cdmPrivacy.html\n\nBibText version:\n@MISC{noauthor_2018-mt, title = “General Data Protection Regulation ({GDPR}) Compliance Guidelines”, abstract = “The EU General Data Protection Regulation went into effect on May 25, 2018, replacing the Data Protection Directive 95/46/EC. Designed to increase data privacy for EU citizens, the regulation levies steep fines on organizations that don’t follow the law.”, month = jun, year = 2018, howpublished = “”, note = “Accessed: 2021-8-18”, language = “en” }\nRegular citation: General Data Protection Regulation (GDPR) Compliance Guidelines. 18 Jun 2018 [cited 18 Aug 2021]. Available: https://gdpr.eu/",
-    "crumbs": [
-      "Proprietary and PHI considerations"
-    ]
-  },
-  {
-    "objectID": "dataPartners/proprietary.html#the-data-holders-responsibility",
-    "href": "dataPartners/proprietary.html#the-data-holders-responsibility",
-    "title": "Proprietary and PHI considerations",
-    "section": "",
-    "text": "In OHDSI, it is the responsibility of each data holder to know, understand and follow local data governance processes related to use of the OMOP CDM. In the United States, these processes will follow your organization’s local interpretation for maintaining compliance to PII and PHI protection. In OMOP CDM implementations containing European Union citizen data, local governance processes will include measures to comply with General Data Protection Regulation (GDPR) [1]. As a community, the OHDSI data network covers more than 500 databases from 49 countries. There is extensive community knowledge on the interpretation of rule sets and exemplar IRB and local governance workflows that can be made available to institutions navigating these processes for the first time. If your organization does not have an established data governance process, please reach out on the OHDSI Forums under “Implementers” and the community can respond with shared guidance from their own deployments. As a community, we aim to conduct research that keeps patient-level data local and share only aggregate results.\nPrivacy preserving processes are not one-size fits all. There are many different rule sets that can be applied to datasets. Data holders are recommended to consult with their local privacy officer(s) to ensure all processes applied to a database are compliant with local interpretation of the selected rule set.\n\nhttps://ohdsi.github.io/CommonDataModel/cdmPrivacy.html\n\nBibText version:\n@MISC{noauthor_2018-mt, title = “General Data Protection Regulation ({GDPR}) Compliance Guidelines”, abstract = “The EU General Data Protection Regulation went into effect on May 25, 2018, replacing the Data Protection Directive 95/46/EC. Designed to increase data privacy for EU citizens, the regulation levies steep fines on organizations that don’t follow the law.”, month = jun, year = 2018, howpublished = “”, note = “Accessed: 2021-8-18”, language = “en” }\nRegular citation: General Data Protection Regulation (GDPR) Compliance Guidelines. 18 Jun 2018 [cited 18 Aug 2021]. Available: https://gdpr.eu/",
-    "crumbs": [
-      "Proprietary and PHI considerations"
-    ]
-  },
-  {
-    "objectID": "dataPartners/Overview.html",
-    "href": "dataPartners/Overview.html",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web",
-    "crumbs": [
-      "Helpful Links"
-    ]
-  },
-  {
-    "objectID": "dataPartners/Overview.html#helpful-links",
-    "href": "dataPartners/Overview.html#helpful-links",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web",
-    "crumbs": [
-      "Helpful Links"
-    ]
-  },
-  {
-    "objectID": "tools/02_databuildtool.html",
-    "href": "tools/02_databuildtool.html",
-    "title": "Data Build Tool",
-    "section": "",
-    "text": "Data Build Tool",
-    "crumbs": [
-      "Data Build Tool"
-    ]
-  },
-  {
-    "objectID": "tools/01_jackalope.html",
-    "href": "tools/01_jackalope.html",
-    "title": "Jackalope",
-    "section": "",
-    "text": "Jackalope",
-    "crumbs": [
-      "Jackalope"
-    ]
-  },
-  {
-    "objectID": "tools/00_overview.html",
-    "href": "tools/00_overview.html",
-    "title": "Helpful Links",
-    "section": "",
-    "text": "Helpful Links",
-    "crumbs": [
-      "Helpful Links"
-    ]
-  },
-  {
     "objectID": "dataPartners/dpoGeneralInfo.html",
     "href": "dataPartners/dpoGeneralInfo.html",
     "title": "General Information",
     "section": "",
-    "text": "Becoming a Data Partner Organization (DPO) in the OHDSI Evidence Network places your organization at the forefront of observational research. As a DPO, you’ll contribute to an open, collaborative network that connects researchers and organizations, advancing health research outcomes worldwide. The data source contributions of DPOs streamline the OHDSI Evidence Network initiative which strives for alignment between available data and research questions. Not only does joining the evidence network place your data in a network that fosters such research advancement, but also this data partner contribution receives recognition via display on the OHDSI website. The following article outlines the steps necessary to join the OHDSI Evidence Network as a Data Partner Organization.\nNote: The OHDSI Evidence Network Member agrees not to share any patient information that constitutes protected health information or share confidential business information. It is the intent of the OHDSI Coordinating Center to keep all shared information private, but in the event of an external breach, the OHDSI Coordinating Center is not liable for loss of the information. If an OHDSI Evidence Network Member accidentally shares confidential information, the OHDSI Coordinating Center will delete that information to the extent possible at the time of the discovery of the breach.",
+    "text": "Becoming a Data Partner Organization (DPO) in the OHDSI Evidence Network places your organization at the forefront of observational research. As a DPO, you’ll contribute to an open, collaborative network that connects researchers and organizations, advancing health research outcomes worldwide. The data source contributions of DPOs streamline the OHDSI Evidence Network initiative which strives for alignment between available data and research questions. Not only does joining the evidence network place your data in a network that fosters such research advancement, but also this data partner contribution receives recognition via display on the OHDSI website. The following article gives a high-level overview describing the requirements to join, what you will need to share with the OHDSI Coordinating Center, and what you can expect when you join the OHDSI Evidence Network as a Data Partner Organization.\nNote: The OHDSI Evidence Network Member agrees not to share any patient information that constitutes protected health information or share confidential business information. It is the intent of the OHDSI Coordinating Center to keep all shared information private, but in the event of an external breach, the OHDSI Coordinating Center is not liable for loss of the information. If an OHDSI Evidence Network Member accidentally shares confidential information, the OHDSI Coordinating Center will delete that information to the extent possible at the time of the discovery of the breach.",
     "crumbs": [
       "General Information"
     ]
@@ -128,6 +58,50 @@
     "text": "Requirements to Join:\nBefore proceeding with the necessary steps to become a DPO, consider the following requirements. These four must-have features ensure consistency, transparency, and efficiency in fulfilling the Evidence Network objective:\n\nObservational health data standardized to the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) v5.3 or higher\nData held in a supported SQL environment accessible by the organization\nApproval from IRB or other governance entity to share metadata and concept counts with the OHDSI Coordinating Center (OCC)\n\nA resource (individual) who can run a package in R/RStudio against the data",
     "crumbs": [
       "General Information"
+    ]
+  },
+  {
+    "objectID": "tools/02_databuildtool.html",
+    "href": "tools/02_databuildtool.html",
+    "title": "Data Build Tool",
+    "section": "",
+    "text": "Data Build Tool",
+    "crumbs": [
+      "Data Build Tool"
+    ]
+  },
+  {
+    "objectID": "tools/01_jackalope.html",
+    "href": "tools/01_jackalope.html",
+    "title": "Jackalope",
+    "section": "",
+    "text": "Jackalope",
+    "crumbs": [
+      "Jackalope"
+    ]
+  },
+  {
+    "objectID": "Overview.html",
+    "href": "Overview.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
+  },
+  {
+    "objectID": "Overview.html#helpful-links",
+    "href": "Overview.html#helpful-links",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
+  },
+  {
+    "objectID": "tools/00_overview.html",
+    "href": "tools/00_overview.html",
+    "title": "Helpful Links",
+    "section": "",
+    "text": "Helpful Links",
+    "crumbs": [
+      "Helpful Links"
     ]
   },
   {
