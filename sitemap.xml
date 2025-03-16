@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/tools/02_databuildtool.html</loc>
-    <lastmod>2025-02-14T21:14:43.196Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/tools/00_overview.html</loc>
-    <lastmod>2025-02-14T21:14:43.196Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/contribute/submit_mappings.html</loc>
-    <lastmod>2025-02-14T21:14:43.187Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/Overview.html</loc>
-    <lastmod>2025-02-14T21:14:43.183Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/index.html</loc>
-    <lastmod>2025-02-14T21:14:43.187Z</lastmod>
-  </url>
-  <url>
     <loc>https://OHDSI.github.io/EvidenceNetwork/collaborate/collaborate.html</loc>
-    <lastmod>2025-02-14T21:14:43.187Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/TODO.html</loc>
-    <lastmod>2025-02-14T21:14:43.183Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/about.html</loc>
-    <lastmod>2025-02-14T21:14:43.187Z</lastmod>
+    <lastmod>2025-03-16T20:32:18.839Z</lastmod>
   </url>
   <url>
     <loc>https://OHDSI.github.io/EvidenceNetwork/getting-started/getting-started.html</loc>
-    <lastmod>2025-02-14T21:14:43.187Z</lastmod>
+    <lastmod>2025-03-16T20:32:18.839Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/Overview.html</loc>
+    <lastmod>2025-03-16T20:32:18.787Z</lastmod>
   </url>
   <url>
     <loc>https://OHDSI.github.io/EvidenceNetwork/dataPartners/dpoGeneralInfo.html</loc>
-    <lastmod>2025-02-14T21:14:43.187Z</lastmod>
+    <lastmod>2025-03-16T20:32:18.839Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/contribute/submit_mappings.html</loc>
+    <lastmod>2025-03-16T20:32:18.839Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/tools/ohdsi_evidence_network.html</loc>
+    <lastmod>2025-03-16T20:32:18.891Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/index.html</loc>
+    <lastmod>2025-03-16T20:32:18.839Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/about.html</loc>
+    <lastmod>2025-03-16T20:32:18.839Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/TODO.html</loc>
+    <lastmod>2025-03-16T20:32:18.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OHDSI.github.io/EvidenceNetwork/oenSummary.html</loc>
+    <lastmod>2025-03-16T20:32:18.840Z</lastmod>
   </url>
   <url>
     <loc>https://OHDSI.github.io/EvidenceNetwork/presentations.html</loc>
-    <lastmod>2025-02-14T21:14:43.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OHDSI.github.io/EvidenceNetwork/tools/01_jackalope.html</loc>
-    <lastmod>2025-02-14T21:14:43.196Z</lastmod>
+    <lastmod>2025-03-16T20:32:18.840Z</lastmod>
   </url>
 </urlset>

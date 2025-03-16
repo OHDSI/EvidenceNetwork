@@ -1,43 +1,17 @@
 [
   {
-    "objectID": "tools/02_databuildtool.html",
-    "href": "tools/02_databuildtool.html",
-    "title": "Data Build Tool",
+    "objectID": "collaborate/collaborate.html",
+    "href": "collaborate/collaborate.html",
+    "title": "Collaborate",
     "section": "",
-    "text": "Data Build Tool",
-    "crumbs": [
-      "Data Build Tool"
-    ]
+    "text": "Test"
   },
   {
-    "objectID": "tools/00_overview.html",
-    "href": "tools/00_overview.html",
-    "title": "Helpful Links",
+    "objectID": "getting-started/getting-started.html",
+    "href": "getting-started/getting-started.html",
+    "title": "Getting Started",
     "section": "",
-    "text": "Helpful Links",
-    "crumbs": [
-      "Helpful Links"
-    ]
-  },
-  {
-    "objectID": "contribute/submit_mappings.html",
-    "href": "contribute/submit_mappings.html",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
-    "crumbs": [
-      "Instructions for mapping contributions"
-    ]
-  },
-  {
-    "objectID": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
-    "href": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
-    "crumbs": [
-      "Instructions for mapping contributions"
-    ]
+    "text": "Getting Started"
   },
   {
     "objectID": "Overview.html",
@@ -52,69 +26,6 @@
     "title": "OHDSI Evidence Network",
     "section": "",
     "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "Why Join?\n  \n  \n      Forums\n  \n  \n      Helpful Links\n  \n  \n      GitHub\n  \n  \n      RSS\n  \n  \n      Global Symposium\n  \n\n\n\n\n\n\nWelcome to the OHDSI Evidence Network\nThe Observational Health Data Sciences and Informatics (or OHDSI, pronounced “Odyssey”) program is a multi-stakeholder, interdisciplinary collaborative to bring out the value of health data through large-scale analytics. All our solutions are open-source.\nOHDSI’s mission - To improve health by empowering a community to collaboratively generate the evidence that promotes better health decisions and better care.\nEvidence Network mission - To connect those who need data with those who have data in order to generate evidence at scale in accordance with OHDSI’s mission.\nThe Evidence Network meets the second Thursday of the month at 10:30am EST. Please join us on the MS Teams call\n\n\nCollaborators say…\n\n\n\n\n\n“The OHDSI community is a well-organized and highly welcoming community of experts who have helped me grow throughout my career. I was honored to bring European data into the OHDSI Evidence Network because of the importance of a diverse patient population for our global studies. As expected, the support and guidance I received from the community made the process both simple and fulfilling. Heliant Health, along with its data partners in the Balkans region, looks forward to joining this critical initiative and generate the necessary evidence to improve healthcare.”\nFilip Maljković, Core Tech Lead, Heliant Health\n\n\n\n\n“Joining the OHDSI Evidence Network was important to me because it allows us to increase the diversity of patient populations represented in the network, particularly from the Midwest U.S., which is currently underrepresented. I believe that the methods developed by OHDSI can enhance care and improve patient health within my local healthcare system. The process to join was straightforward, thanks to OHDSI’s collaborative and open-source community, with ample support through documentation, forums, and workgroup calls. By being part of the network, I hope to engage more data partners so we can tackle challenging clinical problems together, such as rare diseases and rare adverse drug reactions, which are often impossible to address with a single database.”\nLinying Zhang, Assistant Professor of Biostatistics at the Institute for Informatics, Data Science, & Biostatistics, Washington University at St. Louis\n\n\n\n\n“HealthPartners Institute was motivated to join the OHDSI Evidence Network to collaborate with organizations around the world and contribute to research that can promote better health and improve care – both locally and on a global scale. Prior to joining, we secured leadership buy-in, IRB approval, and limited funding to support our participation. We felt very supported throughout the process of joining the Evidence Network, and the OHDSI staff were helpful and responsive to questions we had along the way. We look forward to building relationships with other members and participating in workgroups to make meaningful contributions to research in the future.”\nSam Patnoe, Senior Programmer Analyst, Research Informatics, Health Partners Institute"
-  },
-  {
-    "objectID": "collaborate/collaborate.html",
-    "href": "collaborate/collaborate.html",
-    "title": "Collaborate",
-    "section": "",
-    "text": "Test"
-  },
-  {
-    "objectID": "TODO.html",
-    "href": "TODO.html",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "Storage of word documents\nStorage of csv files\nLink to Dynamic Mapping Tools and Metadata for Dynamic Mapping Tools\nEpic User web and other proprietary\nETL\nInventory Management"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Value for Data Partners",
-    "section": "",
-    "text": "The Observational Health Data Sciences and Informatics (OHDSI) Evidence Network is redefining global collaboration in health data research. Much like the ancient Greeks who connected stars into constellations to tell stories, OHDSI connects data partners around the world, transforming disparate datasets into meaningful, actionable evidence that improves patient care. Whether you represent government, academia, or industry, the OHDSI Evidence Network offers unparalleled opportunities to advance science, foster innovation, and achieve real-world impact.\n\n\nThe OHDSI Evidence Network is a global community dedicated to connecting researchers with data sources, fostering collaborations that lead to evidence generation. The network’s mission is simple yet profound: to leverage real-world data to improve patient outcomes. Through the adoption of the OMOP Common Data Model (CDM) and open-source tools like Atlas, OHDSI simplifies the process of data integration and analysis, reducing barriers to high-quality research.\n\n\n\nOrganizations across government, academia, and industry each have unique motivations for joining the OHDSI Evidence Network. Here are some key benefits for each group:\n\n\nData Accessibility and Insights: Agencies like the U.S. Department of Veterans Affairs (VA) have found immense value in transforming their complex datasets into the OMOP CDM. This shift not only reduced the learning curve for researchers but also improved the reliability of evidence generated from their data.\nCollaboration and Innovation: By participating in OHDSI, government organizations gain access to cutting-edge methodologies, such as large-scale propensity score modeling and negative controls, enabling them to deliver robust, impactful evidence for public health initiatives.\nMission Alignment: For entities like the VA, OHDSI’s focus on improving patient outcomes directly aligns with their mission of serving veterans and their families.\n\n\n\nEnhanced Research Capabilities: Participation in OHDSI network studies allows academic researchers to better understand the strengths and limitations of their data. Institutions like IDIAP Jordi Gol in Spain have used OHDSI to improve data quality and generate impactful evidence, particularly during the COVID-19 pandemic.\nTraining and Career Development: The use of standardized tools and collaborative studies provides a rich training ground for students and researchers, fostering skill development and career advancement.\nVisibility and Recognition: Academic data partners often earn trust and credibility as reliable contributors, opening doors to prestigious opportunities like DARWIN EU, a federated network supporting regulatory decision-making in Europe.\n\n\n\nReal-World Evidence Generation: Companies like IQVIA recognize the growing importance of real-world evidence in shaping regulatory and commercial strategies. OHDSI provides a robust framework for integrating and analyzing heterogeneous datasets, driving reliable evidence generation.\nAccess to a Talent Pipeline: With a global community of researchers and practitioners, OHDSI serves as a hub for talent and expertise, helping industry partners stay at the forefront of innovation.\nLeadership and Standards: OHDSI’s community-driven guidelines ensure high-quality, credible results, allowing industry partners to align their practices with the highest standards.\n\n\n\n\nWhat sets OHDSI apart is its ecosystem approach. It’s not just about tools or data models—it’s about building a global community dedicated to advancing healthcare. From fostering collaboration to driving methodological innovation, OHDSI provides a platform where data partners can:\nParticipate in large-scale, high-impact studies.\nLeverage standardized tools to simplify complex analyses.\nCollaborate with experts across sectors, including academia, government, and industry.\nGenerate evidence that accelerates scientific discovery and improves patient outcomes.\n\n\n\nIf your organization has data mapped to the OMOP CDM or is considering joining the network, the time to act is now. The OHDSI Evidence Network offers a unique opportunity to contribute to a global effort that’s transforming healthcare research. By joining, you’ll not only enhance your own capabilities but also become part of a movement that’s shaping the future of medicine.\nTake the next step and connect with OHDSI. Together, we can light up the sky with evidence, one data partner at a time."
-  },
-  {
-    "objectID": "about.html#what-is-the-ohdsi-evidence-network",
-    "href": "about.html#what-is-the-ohdsi-evidence-network",
-    "title": "Value for Data Partners",
-    "section": "",
-    "text": "The OHDSI Evidence Network is a global community dedicated to connecting researchers with data sources, fostering collaborations that lead to evidence generation. The network’s mission is simple yet profound: to leverage real-world data to improve patient outcomes. Through the adoption of the OMOP Common Data Model (CDM) and open-source tools like Atlas, OHDSI simplifies the process of data integration and analysis, reducing barriers to high-quality research."
-  },
-  {
-    "objectID": "about.html#why-join-the-ohdsi-evidence-network",
-    "href": "about.html#why-join-the-ohdsi-evidence-network",
-    "title": "Value for Data Partners",
-    "section": "",
-    "text": "Organizations across government, academia, and industry each have unique motivations for joining the OHDSI Evidence Network. Here are some key benefits for each group:\n\n\nData Accessibility and Insights: Agencies like the U.S. Department of Veterans Affairs (VA) have found immense value in transforming their complex datasets into the OMOP CDM. This shift not only reduced the learning curve for researchers but also improved the reliability of evidence generated from their data.\nCollaboration and Innovation: By participating in OHDSI, government organizations gain access to cutting-edge methodologies, such as large-scale propensity score modeling and negative controls, enabling them to deliver robust, impactful evidence for public health initiatives.\nMission Alignment: For entities like the VA, OHDSI’s focus on improving patient outcomes directly aligns with their mission of serving veterans and their families.\n\n\n\nEnhanced Research Capabilities: Participation in OHDSI network studies allows academic researchers to better understand the strengths and limitations of their data. Institutions like IDIAP Jordi Gol in Spain have used OHDSI to improve data quality and generate impactful evidence, particularly during the COVID-19 pandemic.\nTraining and Career Development: The use of standardized tools and collaborative studies provides a rich training ground for students and researchers, fostering skill development and career advancement.\nVisibility and Recognition: Academic data partners often earn trust and credibility as reliable contributors, opening doors to prestigious opportunities like DARWIN EU, a federated network supporting regulatory decision-making in Europe.\n\n\n\nReal-World Evidence Generation: Companies like IQVIA recognize the growing importance of real-world evidence in shaping regulatory and commercial strategies. OHDSI provides a robust framework for integrating and analyzing heterogeneous datasets, driving reliable evidence generation.\nAccess to a Talent Pipeline: With a global community of researchers and practitioners, OHDSI serves as a hub for talent and expertise, helping industry partners stay at the forefront of innovation.\nLeadership and Standards: OHDSI’s community-driven guidelines ensure high-quality, credible results, allowing industry partners to align their practices with the highest standards."
-  },
-  {
-    "objectID": "about.html#the-ohdsi-advantage",
-    "href": "about.html#the-ohdsi-advantage",
-    "title": "Value for Data Partners",
-    "section": "",
-    "text": "What sets OHDSI apart is its ecosystem approach. It’s not just about tools or data models—it’s about building a global community dedicated to advancing healthcare. From fostering collaboration to driving methodological innovation, OHDSI provides a platform where data partners can:\nParticipate in large-scale, high-impact studies.\nLeverage standardized tools to simplify complex analyses.\nCollaborate with experts across sectors, including academia, government, and industry.\nGenerate evidence that accelerates scientific discovery and improves patient outcomes."
-  },
-  {
-    "objectID": "about.html#a-call-to-action",
-    "href": "about.html#a-call-to-action",
-    "title": "Value for Data Partners",
-    "section": "",
-    "text": "If your organization has data mapped to the OMOP CDM or is considering joining the network, the time to act is now. The OHDSI Evidence Network offers a unique opportunity to contribute to a global effort that’s transforming healthcare research. By joining, you’ll not only enhance your own capabilities but also become part of a movement that’s shaping the future of medicine.\nTake the next step and connect with OHDSI. Together, we can light up the sky with evidence, one data partner at a time."
-  },
-  {
-    "objectID": "getting-started/getting-started.html",
-    "href": "getting-started/getting-started.html",
-    "title": "Getting Started",
-    "section": "",
-    "text": "Getting Started"
   },
   {
     "objectID": "dataPartners/dpoGeneralInfo.html",
@@ -157,20 +68,100 @@
     ]
   },
   {
+    "objectID": "contribute/submit_mappings.html",
+    "href": "contribute/submit_mappings.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
+    "crumbs": [
+      "Instructions for mapping contributions"
+    ]
+  },
+  {
+    "objectID": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
+    "href": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
+    "crumbs": [
+      "Instructions for mapping contributions"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "Why Join?\n  \n  \n      Forums\n  \n  \n      Helpful Links\n  \n  \n      GitHub\n  \n  \n      RSS\n  \n  \n      Global Symposium\n  \n\n\n\n\n\n\nWelcome to the OHDSI Evidence Network\nThe Observational Health Data Sciences and Informatics (or OHDSI, pronounced “Odyssey”) program is a multi-stakeholder, interdisciplinary collaborative to bring out the value of health data through large-scale analytics. All our solutions are open-source.\nOHDSI’s mission - To improve health by empowering a community to collaboratively generate the evidence that promotes better health decisions and better care.\nEvidence Network mission - To connect those who need data with those who have data in order to generate evidence at scale in accordance with OHDSI’s mission.\nThe Evidence Network meets the second Thursday of the month at 10:30am EST. Please join us on the MS Teams call\n\n\nCollaborators say…\n\n\n\n\n\n“The OHDSI community is a well-organized and highly welcoming community of experts who have helped me grow throughout my career. I was honored to bring European data into the OHDSI Evidence Network because of the importance of a diverse patient population for our global studies. As expected, the support and guidance I received from the community made the process both simple and fulfilling. Heliant Health, along with its data partners in the Balkans region, looks forward to joining this critical initiative and generate the necessary evidence to improve healthcare.”\nFilip Maljković, Core Tech Lead, Heliant Health\n\n\n\n\n“Joining the OHDSI Evidence Network was important to me because it allows us to increase the diversity of patient populations represented in the network, particularly from the Midwest U.S., which is currently underrepresented. I believe that the methods developed by OHDSI can enhance care and improve patient health within my local healthcare system. The process to join was straightforward, thanks to OHDSI’s collaborative and open-source community, with ample support through documentation, forums, and workgroup calls. By being part of the network, I hope to engage more data partners so we can tackle challenging clinical problems together, such as rare diseases and rare adverse drug reactions, which are often impossible to address with a single database.”\nLinying Zhang, Assistant Professor of Biostatistics at the Institute for Informatics, Data Science, & Biostatistics, Washington University at St. Louis\n\n\n\n\n“HealthPartners Institute was motivated to join the OHDSI Evidence Network to collaborate with organizations around the world and contribute to research that can promote better health and improve care – both locally and on a global scale. Prior to joining, we secured leadership buy-in, IRB approval, and limited funding to support our participation. We felt very supported throughout the process of joining the Evidence Network, and the OHDSI staff were helpful and responsive to questions we had along the way. We look forward to building relationships with other members and participating in workgroups to make meaningful contributions to research in the future.”\nSam Patnoe, Senior Programmer Analyst, Research Informatics, Health Partners Institute"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Value for Data Partners",
+    "section": "",
+    "text": "The Observational Health Data Sciences and Informatics (OHDSI) Evidence Network is redefining global collaboration in health data research. Much like the ancient Greeks who connected stars into constellations to tell stories, OHDSI connects data partners around the world, transforming disparate datasets into meaningful, actionable evidence that improves patient care. Whether you represent government, academia, or industry, the OHDSI Evidence Network offers unparalleled opportunities to advance science, foster innovation, and achieve real-world impact.\n\n\nThe OHDSI Evidence Network is a global community dedicated to connecting researchers with data sources, fostering collaborations that lead to evidence generation. The network’s mission is simple yet profound: to leverage real-world data to improve patient outcomes. Through the adoption of the OMOP Common Data Model (CDM) and open-source tools like Atlas, OHDSI simplifies the process of data integration and analysis, reducing barriers to high-quality research.\n\n\n\nOrganizations across government, academia, and industry each have unique motivations for joining the OHDSI Evidence Network. Here are some key benefits for each group:\n\n\nData Accessibility and Insights: Agencies like the U.S. Department of Veterans Affairs (VA) have found immense value in transforming their complex datasets into the OMOP CDM. This shift not only reduced the learning curve for researchers but also improved the reliability of evidence generated from their data.\nCollaboration and Innovation: By participating in OHDSI, government organizations gain access to cutting-edge methodologies, such as large-scale propensity score modeling and negative controls, enabling them to deliver robust, impactful evidence for public health initiatives.\nMission Alignment: For entities like the VA, OHDSI’s focus on improving patient outcomes directly aligns with their mission of serving veterans and their families.\n\n\n\nEnhanced Research Capabilities: Participation in OHDSI network studies allows academic researchers to better understand the strengths and limitations of their data. Institutions like IDIAP Jordi Gol in Spain have used OHDSI to improve data quality and generate impactful evidence, particularly during the COVID-19 pandemic.\nTraining and Career Development: The use of standardized tools and collaborative studies provides a rich training ground for students and researchers, fostering skill development and career advancement.\nVisibility and Recognition: Academic data partners often earn trust and credibility as reliable contributors, opening doors to prestigious opportunities like DARWIN EU, a federated network supporting regulatory decision-making in Europe.\n\n\n\nReal-World Evidence Generation: Companies like IQVIA recognize the growing importance of real-world evidence in shaping regulatory and commercial strategies. OHDSI provides a robust framework for integrating and analyzing heterogeneous datasets, driving reliable evidence generation.\nAccess to a Talent Pipeline: With a global community of researchers and practitioners, OHDSI serves as a hub for talent and expertise, helping industry partners stay at the forefront of innovation.\nLeadership and Standards: OHDSI’s community-driven guidelines ensure high-quality, credible results, allowing industry partners to align their practices with the highest standards.\n\n\n\n\nWhat sets OHDSI apart is its ecosystem approach. It’s not just about tools or data models—it’s about building a global community dedicated to advancing healthcare. From fostering collaboration to driving methodological innovation, OHDSI provides a platform where data partners can:\nParticipate in large-scale, high-impact studies.\nLeverage standardized tools to simplify complex analyses.\nCollaborate with experts across sectors, including academia, government, and industry.\nGenerate evidence that accelerates scientific discovery and improves patient outcomes.\n\n\n\nIf your organization has data mapped to the OMOP CDM or is considering joining the network, the time to act is now. The OHDSI Evidence Network offers a unique opportunity to contribute to a global effort that’s transforming healthcare research. By joining, you’ll not only enhance your own capabilities but also become part of a movement that’s shaping the future of medicine.\nTake the next step and connect with OHDSI. Together, we can light up the sky with evidence, one data partner at a time."
+  },
+  {
+    "objectID": "about.html#what-is-the-ohdsi-evidence-network",
+    "href": "about.html#what-is-the-ohdsi-evidence-network",
+    "title": "Value for Data Partners",
+    "section": "",
+    "text": "The OHDSI Evidence Network is a global community dedicated to connecting researchers with data sources, fostering collaborations that lead to evidence generation. The network’s mission is simple yet profound: to leverage real-world data to improve patient outcomes. Through the adoption of the OMOP Common Data Model (CDM) and open-source tools like Atlas, OHDSI simplifies the process of data integration and analysis, reducing barriers to high-quality research."
+  },
+  {
+    "objectID": "about.html#why-join-the-ohdsi-evidence-network",
+    "href": "about.html#why-join-the-ohdsi-evidence-network",
+    "title": "Value for Data Partners",
+    "section": "",
+    "text": "Organizations across government, academia, and industry each have unique motivations for joining the OHDSI Evidence Network. Here are some key benefits for each group:\n\n\nData Accessibility and Insights: Agencies like the U.S. Department of Veterans Affairs (VA) have found immense value in transforming their complex datasets into the OMOP CDM. This shift not only reduced the learning curve for researchers but also improved the reliability of evidence generated from their data.\nCollaboration and Innovation: By participating in OHDSI, government organizations gain access to cutting-edge methodologies, such as large-scale propensity score modeling and negative controls, enabling them to deliver robust, impactful evidence for public health initiatives.\nMission Alignment: For entities like the VA, OHDSI’s focus on improving patient outcomes directly aligns with their mission of serving veterans and their families.\n\n\n\nEnhanced Research Capabilities: Participation in OHDSI network studies allows academic researchers to better understand the strengths and limitations of their data. Institutions like IDIAP Jordi Gol in Spain have used OHDSI to improve data quality and generate impactful evidence, particularly during the COVID-19 pandemic.\nTraining and Career Development: The use of standardized tools and collaborative studies provides a rich training ground for students and researchers, fostering skill development and career advancement.\nVisibility and Recognition: Academic data partners often earn trust and credibility as reliable contributors, opening doors to prestigious opportunities like DARWIN EU, a federated network supporting regulatory decision-making in Europe.\n\n\n\nReal-World Evidence Generation: Companies like IQVIA recognize the growing importance of real-world evidence in shaping regulatory and commercial strategies. OHDSI provides a robust framework for integrating and analyzing heterogeneous datasets, driving reliable evidence generation.\nAccess to a Talent Pipeline: With a global community of researchers and practitioners, OHDSI serves as a hub for talent and expertise, helping industry partners stay at the forefront of innovation.\nLeadership and Standards: OHDSI’s community-driven guidelines ensure high-quality, credible results, allowing industry partners to align their practices with the highest standards."
+  },
+  {
+    "objectID": "about.html#the-ohdsi-advantage",
+    "href": "about.html#the-ohdsi-advantage",
+    "title": "Value for Data Partners",
+    "section": "",
+    "text": "What sets OHDSI apart is its ecosystem approach. It’s not just about tools or data models—it’s about building a global community dedicated to advancing healthcare. From fostering collaboration to driving methodological innovation, OHDSI provides a platform where data partners can:\nParticipate in large-scale, high-impact studies.\nLeverage standardized tools to simplify complex analyses.\nCollaborate with experts across sectors, including academia, government, and industry.\nGenerate evidence that accelerates scientific discovery and improves patient outcomes."
+  },
+  {
+    "objectID": "about.html#a-call-to-action",
+    "href": "about.html#a-call-to-action",
+    "title": "Value for Data Partners",
+    "section": "",
+    "text": "If your organization has data mapped to the OMOP CDM or is considering joining the network, the time to act is now. The OHDSI Evidence Network offers a unique opportunity to contribute to a global effort that’s transforming healthcare research. By joining, you’ll not only enhance your own capabilities but also become part of a movement that’s shaping the future of medicine.\nTake the next step and connect with OHDSI. Together, we can light up the sky with evidence, one data partner at a time."
+  },
+  {
+    "objectID": "TODO.html",
+    "href": "TODO.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "Storage of word documents\nStorage of csv files\nLink to Dynamic Mapping Tools and Metadata for Dynamic Mapping Tools\nEpic User web and other proprietary\nETL\nInventory Management"
+  },
+  {
+    "objectID": "oenSummary.html",
+    "href": "oenSummary.html",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "This document provides a summary of the OHDSI Evidence Network data sources.\n\n\n\n\nConnecting using PostgreSQL driver\n\n\n\n\n\n\ntotalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
+  },
+  {
+    "objectID": "oenSummary.html#overview",
+    "href": "oenSummary.html#overview",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "Connecting using PostgreSQL driver"
+  },
+  {
+    "objectID": "oenSummary.html#total-number-of-databases",
+    "href": "oenSummary.html#total-number-of-databases",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "totalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
+  },
+  {
     "objectID": "presentations.html",
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
     "text": "Tools\nPresentations on tools used for ETL\n\n\n  \n\n\n\nDate\nTitle\nPresenter\n\n\n\n\n2022-09-22\nSNOMED CT Model for Post-Coordination as a Way to Sustainably Represent Source Concepts in OMOP CDM\nEduard Korchmar\n\n\n2022-09-22\nSNOMED CT Model for Post-Coordination as a Way to Sustainably Represent Source Concepts in OMOP CDM\nEduard Korchmar\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "tools/01_jackalope.html",
-    "href": "tools/01_jackalope.html",
-    "title": "Jackalope",
-    "section": "",
-    "text": "Jackalope",
-    "crumbs": [
-      "Jackalope"
-    ]
   }
 ]
