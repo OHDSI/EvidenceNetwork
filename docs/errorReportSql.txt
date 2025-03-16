@@ -1,0 +1,41 @@
+DBMS:
+postgresql
+
+Error:
+org.postgresql.util.PSQLException: ERROR: column "data_type" does not exist
+  Position: 8
+
+SQL:
+select data_type, count(*) as count
+        from ohdsi_evidence_network.metadata
+        group by data_type
+
+R version:
+R version 4.2.3 (2023-03-15)
+
+Platform:
+x86_64-apple-darwin17.0
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- DT (0.30)
+- plotly (4.10.4)
+- leaflet (2.2.2)
+- lubridate (1.9.3)
+- forcats (1.0.0)
+- stringr (1.5.1)
+- dplyr (1.1.4)
+- purrr (1.0.2)
+- readr (2.1.5)
+- tidyr (1.3.1)
+- tibble (3.2.1)
+- ggplot2 (3.5.1)
+- tidyverse (2.0.0)

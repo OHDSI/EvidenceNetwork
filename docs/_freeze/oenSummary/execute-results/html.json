@@ -1,0 +1,17 @@
+{
+  "hash": "290fe92519e7ec0e4ef6fdeae9a42cea",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"OHDSI Evidence Network Summary\"\nauthor: \"Clair Blacketer\"\ndate: \"2025-03-12\"\nformat: \n  html:\n    theme: flatly\n---\n\n\n\n# OHDSI Evidence Network Summary\n\nThis document provides a summary of the OHDSI Evidence Network data sources. \n\n\n\n::: {.cell}\n\n:::\n\n\n\n## Overview\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stderr}\n\n```\nConnecting using PostgreSQL driver\n```\n\n\n:::\n:::\n\n\n\n## Total Number of Databases\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ntotalDbs\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n            STATISTIC VALUE\n1 Number of Databases    42\n```\n\n\n:::\n:::\n\n\n\n## Databases by Data Type\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](oenSummary_files/figure-html/dbTypesPieChart-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "oenSummary_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

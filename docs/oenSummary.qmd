@@ -1,0 +1,76 @@
+---
+title: "OHDSI Evidence Network Summary"
+author: "Clair Blacketer"
+date: "2025-03-12"
+format: 
+  html:
+    theme: flatly
+---
+
+# OHDSI Evidence Network Summary
+
+This document provides a summary of the OHDSI Evidence Network data sources. 
+
+```{r setup, echo=FALSE}
+
+# Create variables
+oenDatabaseSchema <- "ohdsi_evidence_network"
+
+# Create connection details
+dbProfileConnectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "postgresql",
+                                                                         user = Sys.getenv("OEN_USER"),
+                                                                         password = Sys.getenv("OEN_PASSWORD"),
+                                                                         server = Sys.getenv("OEN_SERVER"),
+                                                                         port = 5432,
+                                                                         extraSettings = "ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory")
+
+
+```
+
+## Overview
+
+```{r oenOverview, echo=FALSE}
+## Get total number of databases
+sql <- "Select 'Number of Databases' as statistic, 
+                count(*) as value 
+        from @oen_database_schema.metadata"
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+totalDbs <- DatabaseConnector::querySql(conn, renderedSql)
+
+## Get databases by data type
+sql <- "Select data_type, count(*) as db_count
+            from(select
+                    case when data_provenance is NULL then 'Other'
+                    when data_provenance like 'NA%' then 'Other'
+                    else data_provenance end as data_type
+                 from @oen_database_schema.metadata
+                ) A
+        group by data_type"
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+dbTypes <- DatabaseConnector::querySql(conn, renderedSql)
+
+```
+
+## Total Number of Databases
+
+```{r totalDbs}
+totalDbs
+```
+
+## Databases by Data Type
+
+```{r dbTypesPieChart, echo=FALSE}
+library(ggplot2)
+
+# Create pie chart
+ggplot(dbTypes, aes(x="", y=DB_COUNT, fill=DATA_TYPE)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0) +
+  theme_void() +
+  geom_text(aes(label=DB_COUNT), position=position_stack(vjust=0.5), size=5) +
+  theme(legend.text=element_text(size=12)) +
+  labs(title="Databases by Data Type")
+```

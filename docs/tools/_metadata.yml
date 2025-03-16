@@ -1,0 +1,7 @@
+format:
+  dashboard:
+      theme: default
+      orientation: rows
+      expandable: true
+      scrolling: true
+runtime: shiny

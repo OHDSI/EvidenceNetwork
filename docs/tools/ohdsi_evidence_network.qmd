@@ -1,0 +1,344 @@
+---
+title: "OHDSI Evidence Network Summary"
+date: "2025-03-12"
+format: 
+  dashboard
+---
+
+This document provides a summary of the OHDSI Evidence Network data sources. 
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(htmltools)
+library(leaflet)
+library(plotly)
+library(DT)
+library(ggplot2)
+library(DatabaseConnector)
+library(SqlRender)
+library(treemap)
+library(igraph)
+
+# Create variables
+oenDatabaseSchema <- "ohdsi_evidence_network"
+
+# Create connection details
+dbProfileConnectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "postgresql",
+                                                                         user = Sys.getenv("OEN_USER"),
+                                                                         password = Sys.getenv("OEN_PASSWORD"),
+                                                                         server = Sys.getenv("OEN_SERVER"),
+                                                                         port = 5432,
+                                                                         extraSettings = "ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory")
+```
+
+
+```{r echo=FALSE}
+## Get total number of databases
+sql <- "Select 'Number of Databases' as statistic, 
+                count(*) as value 
+        from @oen_database_schema.metadata"
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+totalDbs <- DatabaseConnector::querySql(conn, renderedSql)
+DatabaseConnector::disconnect(conn)
+
+totalDbsValue <- totalDbs$VALUE[1]
+
+# totalDbsTile <- flexdashboard::valueBox(
+#   value = totalDbsValue,
+#   icon = "fa-database",
+#   color = "primary"
+# )
+# 
+# totalDbsTile
+
+```
+
+
+```{r echo = FALSE}
+## Get total number of institutions
+sql <- "Select count(distinct substring(oen_id, 1, 4)) as total_institutions 
+  from @oen_database_schema.metadata"
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+totalInstitutions <- DatabaseConnector::querySql(conn, renderedSql)
+DatabaseConnector::disconnect(conn)
+
+totalInstitutionsValue <- totalInstitutions$TOTAL_INSTITUTIONS[1]
+
+# totalInsTile <- flexdashboard::valueBox(
+#   value = totalInstitutionsValue,
+#   icon = "fa-hospital",
+#   color = "info"
+# )
+
+#totalInsTile
+```
+
+## Row {height=10%}
+### Column
+
+```{r}
+#| content: valuebox
+#| title: "Total Databases"
+list(
+  icon = "database-fill",
+  color = "success",
+  value = totalDbsValue
+)
+```
+
+### Column 
+```{r}
+#| content: valuebox
+#| title: "Total Institutions"
+list(
+  icon = "hospital-fill",
+  color = "info",
+  value = totalInstitutionsValue
+)
+```
+
+## Databases Overview {.tabset}
+
+### Databases by Data Type
+
+```{r echo=FALSE}
+
+
+## Get databases by data type
+sql <- "Select data_type, count(*) as db_count
+            from(select
+                    case when data_provenance is NULL then 'Other'
+                    when data_provenance like 'NA%' then 'Other'
+                    else data_provenance end as data_type
+                 from @oen_database_schema.metadata
+                ) A
+        group by data_type"
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+dbDataTypes <- DatabaseConnector::querySql(conn, renderedSql)
+DatabaseConnector::disconnect(conn)
+
+dbDataTypes <- dbDataTypes %>%
+  mutate(DATA_TYPE = factor(DATA_TYPE, levels = DATA_TYPE[order(-DB_COUNT)]))
+
+  dbDataTypesPlot <- plot_ly(
+    dbDataTypes,
+    type = "treemap",
+    labels = ~DATA_TYPE,
+    values = ~DB_COUNT,
+    parents = NA,
+    textinfo = "label+value",
+    textfont = list(size = 16),  # Increase font size
+    marker = list(colors = viridis::viridis(n = nrow(dbDataTypes)))
+  ) %>%
+    layout(
+      title = "Databases by Data Type",
+      uniformtext = list(minsize = 20, mode = "show")  # Ensure text is centered and uniform
+    )
+  
+  dbDataTypesPlot
+
+```
+
+
+
+```{r echo=FALSE}
+### Geographic Distribution
+
+# leaflet(ohdsi_sites) %>%
+#   addTiles() %>%
+#   addCircleMarkers(~Lon, ~Lat, popup = ~paste0("<b>", cdm_source_abbreviation, "</b><br>"#,
+#                                               # "Country: ", Country, "<br>",
+#                                               # "Data Years: ", Data_Years, "<br>",
+#                                               # "Patients: ", Patient_Count)
+#                                               ))
+```
+
+## Demographics Overview {.tabset}
+
+### Gender Distribution
+
+```{r echo=FALSE}
+
+## Get total number of databases
+sql <- "Select 'Number of Databases' as statistic, 
+                count(*) as value 
+        from @oen_database_schema.metadata"
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+totalDbs <- DatabaseConnector::querySql(conn, renderedSql)
+
+## Get databases gender
+sql <- "select oen_id, gender_concept_id, concept_name, sum(count_value) as total_persons
+        from(
+              select oen_id, case when stratum_1 in ('4214687','8551') then '0' else stratum_1 end as gender_concept_id, count_value
+            	from @oen_database_schema.db_profiles
+            	where analysis_id = 2
+        	) a	
+        join vocabulary.concept c
+	          on cast(a.gender_concept_id as integer) = c.concept_id
+        group by oen_id, gender_concept_id, concept_name;"
+
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+
+dbGenders <- DatabaseConnector::querySql(conn, renderedSql)
+names(dbGenders) <- c("OEN Id", "Gender Concept Id", "Gender", "Count")
+
+DatabaseConnector::disconnect(conn)
+
+demo_plot <- dbGenders %>%
+  group_by(Gender) %>%
+  summarize(Count = sum(Count), Databases = n_distinct(`OEN Id`)) %>%
+  ggplot(aes(x = Gender, y = Count, fill = Databases)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Gender Distribution Across the Network", x = "Gender", y = "Patient Count", fill = "Number of Databases") +
+  theme_minimal()
+
+plotly::ggplotly(demo_plot)
+
+```
+
+## Row
+
+## Year of Birth {.tabset}
+
+### Year of Birth Distribution
+
+```{r echo=FALSE}
+
+## Get year of birth by database
+sql <- "select oen_id, stratum_1, count_value
+        from @oen_database_schema.db_profiles
+        where analysis_id = 3 and cast(stratum_1 as integer) > 1889
+        order by stratum_1;"
+
+renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+
+dbYearsOfBirth <- DatabaseConnector::querySql(conn, renderedSql)
+names(dbYearsOfBirth) <- c("OEN Id", "Year of Birth", "Count")
+
+DatabaseConnector::disconnect(conn)
+
+dbYearsOfBirthSum <- dbYearsOfBirth %>%
+  group_by(`Year of Birth`) %>%
+  summarize(Count = sum(Count))
+
+yob_plot <- dbYearsOfBirthSum %>%
+  ggplot(aes(x = `Year of Birth`, y = Count, fill = `Year of Birth`)) +
+  geom_col(position = "dodge") +
+  scale_x_discrete(breaks = seq(min(dbYearsOfBirthSum$`Year of Birth`), max(dbYearsOfBirthSum$`Year of Birth`), by = 5)) +
+  labs(title = "Year of Birth Distribution Across the Network", x = "Year of Birth", y = "Patient Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "none") +
+  scale_fill_viridis_d()
+
+plotly::ggplotly(yob_plot)
+
+```
+
+## Row
+
+## Race and Ethnicity {.tabset}
+
+### Race Distribution
+
+```{r echo=FALSE}
+
+sql <-  "select oen_id, stratum_1 as race_concept_id, concept_name, sum(count_value) as total_persons
+    from(
+        select oen_id, stratum_1, count_value
+    	from @oen_database_schema.db_profiles
+    	where analysis_id = 4
+    	) a	
+    join vocabulary.concept c
+    	on cast(a.stratum_1 as integer) = c.concept_id
+    group by oen_id, stratum_1, concept_name"
+    
+    renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+    conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+    
+    dbRaces <- DatabaseConnector::querySql(conn, renderedSql)
+
+
+names(dbRaces) <- c("OEN Id", "Race Concept Id", "Race", "Count")
+
+DatabaseConnector::disconnect(conn)
+
+race_plot <- dbRaces %>%
+  ggplot(aes(x = reorder(Race, Count), y = Count, fill = Race)) +
+  geom_col() +
+  coord_flip() +
+  scale_y_log10() +
+  labs(title = "Race Distribution Across the Network", x = "Race", y = "Patient Count (log scale)") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  scale_fill_viridis_d()
+
+
+plotly::ggplotly(race_plot)
+
+```
+
+### Ethnicity Distribution
+
+```{r echo=FALSE}
+
+sql <-  "select oen_id, stratum_1 as ethnicity_concept_id, concept_name, sum(count_value) as total_persons
+    from(
+        select oen_id, stratum_1, count_value
+    	from @oen_database_schema.db_profiles
+    	where analysis_id = 5
+    	) a	
+    join vocabulary.concept c
+    	on cast(a.stratum_1 as integer) = c.concept_id
+    group by oen_id, stratum_1, concept_name"
+    
+    renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+    conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+    
+    dbEthnicities <- DatabaseConnector::querySql(conn, renderedSql)
+
+DatabaseConnector::disconnect(conn)
+
+names(dbEthnicities) <- c("OEN Id", "Ethnicity Concept Id", "Ethnicity", "Count")
+
+ethnicity_plot <- dbEthnicities %>%
+  ggplot(aes(x = reorder(Ethnicity, Count), y = Count, fill = Ethnicity)) +
+  geom_col() +
+  coord_flip() +
+  scale_y_log10() +
+  labs(title = "Ethnicity Distribution Across the Network", x = "Ethnicity", y = "Patient Count (log scale)") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  scale_fill_viridis_d()
+
+
+plotly::ggplotly(ethnicity_plot)
+
+```
+
+## Row
+
+## Data Coverage {.tabset}
+
+### OMOP Domains
+
+```{r echo=FALSE} 
+# Placeholder: Replace with actual OMOP data coverage
+domain_coverage <- data.frame( Domain = c("Condition", "Drug
+Exposure", "Observation", "Measurement", "Procedure"), Records =
+c(1500000, 1200000, 900000, 1100000, 800000) )
+
+domain_plot <- ggplot(domain_coverage, aes(x = Domain, y = Records,
+fill = Domain)) + geom_bar(stat = "identity") + labs(title = "OMOP CDM
+Data Coverage", x = "Domain", y = "Records Count") + theme_minimal()
+
+plotly::ggplotly(domain_plot)
+```

@@ -61,24 +61,25 @@
     ]
   },
   {
-    "objectID": "tools/02_databuildtool.html",
-    "href": "tools/02_databuildtool.html",
-    "title": "Data Build Tool",
+    "objectID": "oenSummary.html",
+    "href": "oenSummary.html",
+    "title": "OHDSI Evidence Network Summary",
     "section": "",
-    "text": "Data Build Tool",
-    "crumbs": [
-      "Data Build Tool"
-    ]
+    "text": "This document provides a summary of the OHDSI Evidence Network data sources.\n\n\n\n\nConnecting using PostgreSQL driver\n\n\n\n\n\n\ntotalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
   },
   {
-    "objectID": "tools/01_jackalope.html",
-    "href": "tools/01_jackalope.html",
-    "title": "Jackalope",
+    "objectID": "oenSummary.html#overview",
+    "href": "oenSummary.html#overview",
+    "title": "OHDSI Evidence Network Summary",
     "section": "",
-    "text": "Jackalope",
-    "crumbs": [
-      "Jackalope"
-    ]
+    "text": "Connecting using PostgreSQL driver"
+  },
+  {
+    "objectID": "oenSummary.html#total-number-of-databases",
+    "href": "oenSummary.html#total-number-of-databases",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "totalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
   },
   {
     "objectID": "Overview.html",
@@ -93,16 +94,6 @@
     "title": "OHDSI Evidence Network",
     "section": "",
     "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
-  },
-  {
-    "objectID": "tools/00_overview.html",
-    "href": "tools/00_overview.html",
-    "title": "Helpful Links",
-    "section": "",
-    "text": "Helpful Links",
-    "crumbs": [
-      "Helpful Links"
-    ]
   },
   {
     "objectID": "TODO.html",
