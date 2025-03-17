@@ -132,7 +132,8 @@ dbDataTypes <- dbDataTypes %>%
     labels = ~DATA_TYPE,
     values = ~DB_COUNT,
     parents = NA,
-    textinfo = "label+value",
+    textinfo = "label+value+percent entry",
+    textposition = "middle center",
     textfont = list(size = 16),  # Increase font size
     marker = list(colors = viridis::viridis(n = nrow(dbDataTypes)))
   ) %>%
@@ -140,7 +141,6 @@ dbDataTypes <- dbDataTypes %>%
       title = "Databases by Data Type",
       uniformtext = list(minsize = 20, mode = "show")  # Ensure text is centered and uniform
     )
-  
   dbDataTypesPlot
 
 ```
@@ -243,14 +243,10 @@ plotly::ggplotly(yob_plot)
 
 ```
 
-## Row
-
-## Race and Ethnicity {.tabset}
-
-### Race Distribution
+## Race Distribution
 
 ```{r echo=FALSE}
-
+## Race and Ethnicity {.tabset}
 sql <-  "select oen_id, stratum_1 as race_concept_id, concept_name, sum(count_value) as total_persons
     from(
         select oen_id, stratum_1, count_value
@@ -272,11 +268,13 @@ names(dbRaces) <- c("OEN Id", "Race Concept Id", "Race", "Count")
 DatabaseConnector::disconnect(conn)
 
 race_plot <- dbRaces %>%
-  ggplot(aes(x = reorder(Race, Count), y = Count, fill = Race)) +
+  group_by(Race) %>%
+  summarize(Count = sum(Count), Databases = n_distinct(`OEN Id`)) %>%
+  ggplot(aes(x = reorder(Race, Databases), y = Databases, fill = Race)) +
   geom_col() +
   coord_flip() +
-  scale_y_log10() +
-  labs(title = "Race Distribution Across the Network", x = "Race", y = "Patient Count (log scale)") +
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 10)) +
+  labs(title = "Race Distribution Across the Network", x = "Race", y = "Number of Databases") +
   theme_minimal() +
   theme(legend.position = "none") +
   scale_fill_viridis_d()
@@ -286,7 +284,7 @@ plotly::ggplotly(race_plot)
 
 ```
 
-### Ethnicity Distribution
+## Ethnicity Distribution
 
 ```{r echo=FALSE}
 
@@ -310,11 +308,13 @@ DatabaseConnector::disconnect(conn)
 names(dbEthnicities) <- c("OEN Id", "Ethnicity Concept Id", "Ethnicity", "Count")
 
 ethnicity_plot <- dbEthnicities %>%
-  ggplot(aes(x = reorder(Ethnicity, Count), y = Count, fill = Ethnicity)) +
+  group_by(Ethnicity) %>%
+  summarize(Count = sum(Count), Databases = n_distinct(`OEN Id`)) %>%
+  ggplot(aes(x = reorder(Ethnicity, Count), y = Databases, fill = Ethnicity)) +
   geom_col() +
   coord_flip() +
-  scale_y_log10() +
-  labs(title = "Ethnicity Distribution Across the Network", x = "Ethnicity", y = "Patient Count (log scale)") +
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 10)) +
+  labs(title = "Ethnicity Distribution Across the Network", x = "Ethnicity", y = "Number of Databases") +
   theme_minimal() +
   theme(legend.position = "none") +
   scale_fill_viridis_d()
@@ -324,21 +324,22 @@ plotly::ggplotly(ethnicity_plot)
 
 ```
 
-## Row
 
+
+
+```{r echo=FALSE} 
 ## Data Coverage {.tabset}
 
 ### OMOP Domains
 
-```{r echo=FALSE} 
 # Placeholder: Replace with actual OMOP data coverage
-domain_coverage <- data.frame( Domain = c("Condition", "Drug
-Exposure", "Observation", "Measurement", "Procedure"), Records =
-c(1500000, 1200000, 900000, 1100000, 800000) )
-
-domain_plot <- ggplot(domain_coverage, aes(x = Domain, y = Records,
-fill = Domain)) + geom_bar(stat = "identity") + labs(title = "OMOP CDM
-Data Coverage", x = "Domain", y = "Records Count") + theme_minimal()
-
-plotly::ggplotly(domain_plot)
+# domain_coverage <- data.frame( Domain = c("Condition", "Drug
+# Exposure", "Observation", "Measurement", "Procedure"), Records =
+# c(1500000, 1200000, 900000, 1100000, 800000) )
+# 
+# domain_plot <- ggplot(domain_coverage, aes(x = Domain, y = Records,
+# fill = Domain)) + geom_bar(stat = "identity") + labs(title = "OMOP CDM
+# Data Coverage", x = "Domain", y = "Records Count") + theme_minimal()
+# 
+# plotly::ggplotly(domain_plot)
 ```
