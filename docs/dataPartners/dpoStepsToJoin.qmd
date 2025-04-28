@@ -1,0 +1,22 @@
+---
+hide:
+  - toc
+title: "Steps to Join"
+format: html
+---
+
+## How to Join the OHDSI Evidence Network as a Data Partner Organization
+
+1. Review the [Data Partner Participation Guidelines](https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/blob/main/docs/Data%20Partner%20Participation%20Guidelines.pdf) for information on expectations for Data Partners and responsibilities of the OHDSI Coordinating Center (OCC).
+2.  If required, submit an IRB application based on the research protocol, which we have organized and uploaded to Github.
+    a.  [Evidence Network Study Protocol](https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/blob/main/docs/EvidenceNetworkStudyProtocol_v1.0.pdf)
+    b. [Example OHDSI Evidence Network IRB Application](https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/blob/main/docs/OHDSI_Evidence_Network_IRB_Application.pdf) 
+3. Generate a database profile of your OMOP CDM instance. Once the package is run, you will receive the results in Excel files. 
+4. Compress these files into a zip folder. 
+5. [Follow the instructions](https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/tree/main?tab=readme-ov-file#sharing-results) to upload the zip file to our SFTP site. Once you get to this point we will furnish you with a key file to facilitate the file transfer.
+
+## Becoming Study Ready
+
+After you join the Evidence Network, we want to make sure you are ready to hit the ground running when it comes to participating in network research. We have a sample study package we would like you to run that utilizes OHDSI's **Strategus** framework. All instructions for running the sample study can be found [here](https://github.com/ohdsi-studies/StrategusStudyRepoTemplate/blob/main/template_docs/StudyExecution.md). 
+
+Once you have generated results, please send an email to **evidencenetwork@ohdsi.org** confirming your success. 

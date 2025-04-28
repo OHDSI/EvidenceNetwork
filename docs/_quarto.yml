@@ -31,8 +31,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: getting-started/getting-started.qmd
-        text: Getting Started
       - sidebar:dataPartners
 
     right:
