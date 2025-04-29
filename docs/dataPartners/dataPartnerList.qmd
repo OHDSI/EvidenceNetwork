@@ -1,0 +1,39 @@
+---
+hide:
+  - toc
+title: "Data Partner List"
+format: html
+---
+
+This is the list of Data Partner Organizations currently a part of the OHDSI Evidence Network.
+
+```{r setup, include=FALSE}
+## Table for website
+
+library(dplyr)
+
+dpos <- readxl::read_xlsx(Sys.getenv(OEN_NETWORK_NAMES_FILE), sheet = "OEN Data Partner Orgs")
+
+dataSources <- readxl::read_xlsx(Sys.getenv(OEN_NETWORK_NAMES_FILE), sheet = "OEN Data Sources")
+
+dpoTable <- dataSources %>%
+  filter(Notes != 'Not allowed' | is.na(Notes)) %>%
+  left_join(dpos, by = "Data Partner ID") %>%
+  select("Data Partner Organization",
+         "OHDSI.org Address",
+         "Strategus Test Study Complete",
+         "Data Source ID") %>% 
+  group_by(`Data Partner Organization`,
+           `OHDSI.org Address`,
+           `Strategus Test Study Complete`) %>%
+  summarize(
+    `Number of Data Sources in Network` = n_distinct(`Data Source ID`),
+    .groups = "drop"  
+  )
+```
+
+```{r echo=FALSE}
+library(DT)
+
+datatable(dpoTable, options = list(pageLength = 25, autoWidth = TRUE))
+```

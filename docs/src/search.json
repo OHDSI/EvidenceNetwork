@@ -61,18 +61,14 @@
     ]
   },
   {
-    "objectID": "Overview.html",
-    "href": "Overview.html",
-    "title": "OHDSI Evidence Network",
+    "objectID": "dataPartners/dataPartnerList.html",
+    "href": "dataPartners/dataPartnerList.html",
+    "title": "Data Partner List",
     "section": "",
-    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
-  },
-  {
-    "objectID": "Overview.html#helpful-links",
-    "href": "Overview.html#helpful-links",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
+    "text": "This is the list of Data Partner Organizations currently a part of the OHDSI Evidence Network.",
+    "crumbs": [
+      "Data Partner List"
+    ]
   },
   {
     "objectID": "oenSummary.html",
@@ -94,6 +90,20 @@
     "title": "OHDSI Evidence Network Summary",
     "section": "",
     "text": "totalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
+  },
+  {
+    "objectID": "Overview.html",
+    "href": "Overview.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
+  },
+  {
+    "objectID": "Overview.html#helpful-links",
+    "href": "Overview.html#helpful-links",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
   },
   {
     "objectID": "dataPartners/dpoStepsToJoin.html",
@@ -120,7 +130,7 @@
     "href": "dataPartners/dpoStepsToJoin.html#becoming-study-ready",
     "title": "Steps to Join",
     "section": "Becoming Study Ready",
-    "text": "Becoming Study Ready\nAfter you join the Evidence Network, we want to make sure you are ready to hit the ground running when it comes to participating in network research. We have a sample study package we would like you to run that utilizes our OHDSI’s Strategus framework. All instructions for running the sample study can be found here.\nOnce you have generated results, please send an email to evidencenetwork@ohdsi.org confirming your success.",
+    "text": "Becoming Study Ready\nAfter you join the Evidence Network, we want to make sure you are ready to hit the ground running when it comes to participating in network research. We have a sample study package we would like you to run that utilizes OHDSI’s Strategus framework. All instructions for running the sample study can be found here.\nOnce you have generated results, please send an email to evidencenetwork@ohdsi.org confirming your success.",
     "crumbs": [
       "Steps to Join"
     ]
