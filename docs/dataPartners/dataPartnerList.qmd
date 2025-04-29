@@ -1,8 +1,6 @@
 ---
-hide:
-  - toc
 title: "Data Partner List"
-format: html
+date: "2025-04-28"
 ---
 
 This is the list of Data Partner Organizations currently a part of the OHDSI Evidence Network.
