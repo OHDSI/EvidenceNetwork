@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-04-28">
 
-<title>General Information – OHDSI Evidence Network</title>
+<title>Data Partner List – OHDSI Evidence Network</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +72,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.33/datatables.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 <script data-goatcounter="https://hestia.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
 
@@ -336,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../dataPartners/dpoGeneralInfo.html">General Information</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../dataPartners/dataPartnerList.html">Data Partner List</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -350,13 +361,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../dataPartners/dataPartnerList.html" class="sidebar-item-text sidebar-link">
+  <a href="../dataPartners/dataPartnerList.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Partner List</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../dataPartners/dpoGeneralInfo.html" class="sidebar-item-text sidebar-link active">
+  <a href="../dataPartners/dpoGeneralInfo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General Information</span></a>
   </div>
 </li>
@@ -371,16 +382,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#upon-joining-the-ohdsi-evidence-network-as-a-dpo" id="toc-upon-joining-the-ohdsi-evidence-network-as-a-dpo" class="nav-link active" data-scroll-target="#upon-joining-the-ohdsi-evidence-network-as-a-dpo">Upon joining the OHDSI Evidence Network as a DPO:</a></li>
-  <li><a href="#important-details-on-sharing-data-with-the-occ" id="toc-important-details-on-sharing-data-with-the-occ" class="nav-link" data-scroll-target="#important-details-on-sharing-data-with-the-occ">Important Details on Sharing Data with the OCC:</a></li>
-  <li><a href="#requirements-to-join" id="toc-requirements-to-join" class="nav-link" data-scroll-target="#requirements-to-join">Requirements to Join:</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -388,7 +391,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">General Information</h1>
+<h1 class="title">Data Partner List</h1>
 </div>
 
 
@@ -396,6 +399,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 28, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -405,33 +414,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Becoming a Data Partner Organization (DPO) in the OHDSI Evidence Network places your organization at the forefront of observational research. As a DPO, you’ll contribute to an open, collaborative network that connects researchers and organizations, advancing health research outcomes worldwide. The data source contributions of DPOs streamline the OHDSI Evidence Network initiative which strives for alignment between available data and research questions. Not only does joining the evidence network place your data in a network that fosters such research advancement, but also this data partner contribution receives recognition via display on the OHDSI website. The following article gives a high-level overview describing the requirements to join, what you will need to share with the OHDSI Coordinating Center, and what you can expect when you join the OHDSI Evidence Network as a Data Partner Organization.</p>
-<p><em>Note:</em> The OHDSI Evidence Network Member agrees not to share any patient information that constitutes protected health information or share confidential business information. It is the intent of the OHDSI Coordinating Center to keep all shared information private, but in the event of an external breach, the OHDSI Coordinating Center is not liable for loss of the information. If an OHDSI Evidence Network Member accidentally shares confidential information, the OHDSI Coordinating Center will delete that information to the extent possible at the time of the discovery of the breach.</p>
-<section id="upon-joining-the-ohdsi-evidence-network-as-a-dpo" class="level2">
-<h2 class="anchored" data-anchor-id="upon-joining-the-ohdsi-evidence-network-as-a-dpo">Upon joining the OHDSI Evidence Network as a DPO:</h2>
-<p><strong>Organizational Account Access</strong>: Once a DPO joins the OHDSI Evidence Network by sending the metadata and concept counts for each participating data source to the OCC, they will receive an organizational OHDSI account (<span class="citation" data-cites="ohdsi.org">@ohdsi.org</span>). This account identifies them as members of the network and will be used for communication within the OHDSI Teams environment to coordinate OHDSI efforts. The email address will not be shared publicly.</p>
-<p><strong>Data Source Feedback Report</strong>: Additionally, the organization will receive a report for each data source submitted to the network. This report will compare each data source to others in the network using network-based benchmarks. The report will include metrics such as concepts unique to the data source, concepts present in other data sources but missing from the submitted data source, and comparisons of demographic representation.</p>
-<p><strong>Microsoft Teams Access:</strong> Organizations will be added to the OHDSI Microsoft Teams environment to include access to a resource library.</p>
-</section>
-<section id="important-details-on-sharing-data-with-the-occ" class="level2">
-<h2 class="anchored" data-anchor-id="important-details-on-sharing-data-with-the-occ">Important Details on Sharing Data with the OCC:</h2>
-<p><strong>Permission:</strong> Sending this information to the OCC grants the OCC permission to use this information to support OHDSI Community activities with site name withheld.</p>
-<p><strong>Privately held information</strong>: Once the metadata and concept counts are sent to the OCC, the direct contact information for organizational representatives and the site-specific concept counts will be held privately. This information will be accessible only by the OCC in a secure environment.</p>
-<p><strong>Publicly shared information</strong>: Only network-level concept counts will be shared as an open public resource. Specifically, this will include the overall network total record count and descendant record count for each concept, as well as the total number of data sources in the network that have at least one record for each concept.</p>
-</section>
-<section id="requirements-to-join" class="level2">
-<h2 class="anchored" data-anchor-id="requirements-to-join">Requirements to Join:</h2>
-<p>Before proceeding with the necessary steps to become a DPO, consider the following requirements. These four must-have features ensure consistency, transparency, and efficiency in fulfilling the Evidence Network objective:</p>
-<ul>
-<li>Observational health data standardized to the Observational Medical Outcomes Partnership (OMOP) Common Data Model (CDM) v5.3 or higher</li>
-<li>Data held in a supported SQL environment accessible by the organization</li>
-<li>Approval from IRB or other governance entity to share metadata and concept counts with the OHDSI Coordinating Center (OCC)<br>
-</li>
-<li>A resource (individual) who can run a package in R/RStudio against the data</li>
-</ul>
+<p>This is the list of Data Partner Organizations currently a part of the OHDSI Evidence Network.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-168bdd7c96e3f25f7921" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-168bdd7c96e3f25f7921">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"],["Ajou University","Clinical Hospital Center Zvezdara","Columbia University","GUSTO Singapore Cohort","HealthPartners Institute","IQVIA","Johns Hopkins University","Johnson &amp; Johnson","Lancashire Teaching Hospitals NHS Foundation Trust","Papageorgiou General Hospital","Penn State Health","Precision Data","SMG-SNU Boramae Medical Center","Semmelweis University","Seoul National University Bundang Hospital","Stanford","Taipei Medical University","Tufts University","University of Colorado Anschutz Medical Campus","University of Massachusetts Chan Medical Center","University of New Mexico","University of Texas Southwestern","Veteran's Affairs","Washington University","Yonsei University Hospital"],["ajou@ohdsi.org","chcz@ohdsi.org","cuimc@ohdsi.org","gusto@ohdsi.org","hpi@ohdsi.org","iqvia@ohdsi.org","jhm@ohdsi.org","blacketer@ohdsi.org","lsc@ohdsi.org","cteph@ohdsi.org","PSU@ohdsi.org","precisiondata@ohdsi.org","boramae@ohdsi.org","semmelweis@ohdsi.org","snubh@ohdsi.org","stanford@ohdsi.org","tmu@ohdsi.org","tufts@ohdsi.org","cuanschutz@ohdsi.org","umassmed@ohdsi.org","unm@ohdsi.org","utsw@ohdsi.org","va@ohdsi.org","washu@ohdsi.org","yuhs@ohdsi.org"],[null,null,"Y",null,"Y","Y","Y","Y",null,null,"Y",null,null,null,null,null,"Y","Y",null,null,null,null,"Y","Y",null],[1,1,1,1,1,11,1,8,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Data Partner Organization<\/th>\n      <th>OHDSI.org Address<\/th>\n      <th>Strategus Test Study Complete<\/th>\n      <th>Number of Data Sources in Network<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":25,"autoWidth":true,"columnDefs":[{"className":"dt-right","targets":4},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Data Partner Organization","targets":1},{"name":"OHDSI.org Address","targets":2},{"name":"Strategus Test Study Complete","targets":3},{"name":"Number of Data Sources in Network","targets":4}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

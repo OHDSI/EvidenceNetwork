@@ -14,6 +14,105 @@
     "text": "Test"
   },
   {
+    "objectID": "dataPartners/dpoStepsToJoin.html",
+    "href": "dataPartners/dpoStepsToJoin.html",
+    "title": "Steps to Join",
+    "section": "",
+    "text": "Review the Data Partner Participation Guidelines for information on expectations for Data Partners and responsibilities of the OHDSI Coordinating Center (OCC).\nIf required, submit an IRB application based on the research protocol, which we have organized and uploaded to Github.\n\nEvidence Network Study Protocol\nExample OHDSI Evidence Network IRB Application\n\nGenerate a database profile of your OMOP CDM instance. Once the package is run, you will receive the results in Excel files.\nCompress these files into a zip folder.\nFollow the instructions to upload the zip file to our SFTP site. Once you get to this point we will furnish you with a key file to facilitate the file transfer.",
+    "crumbs": [
+      "Steps to Join"
+    ]
+  },
+  {
+    "objectID": "dataPartners/dpoStepsToJoin.html#how-to-join-the-ohdsi-evidence-network-as-a-data-partner-organization",
+    "href": "dataPartners/dpoStepsToJoin.html#how-to-join-the-ohdsi-evidence-network-as-a-data-partner-organization",
+    "title": "Steps to Join",
+    "section": "",
+    "text": "Review the Data Partner Participation Guidelines for information on expectations for Data Partners and responsibilities of the OHDSI Coordinating Center (OCC).\nIf required, submit an IRB application based on the research protocol, which we have organized and uploaded to Github.\n\nEvidence Network Study Protocol\nExample OHDSI Evidence Network IRB Application\n\nGenerate a database profile of your OMOP CDM instance. Once the package is run, you will receive the results in Excel files.\nCompress these files into a zip folder.\nFollow the instructions to upload the zip file to our SFTP site. Once you get to this point we will furnish you with a key file to facilitate the file transfer.",
+    "crumbs": [
+      "Steps to Join"
+    ]
+  },
+  {
+    "objectID": "dataPartners/dpoStepsToJoin.html#becoming-study-ready",
+    "href": "dataPartners/dpoStepsToJoin.html#becoming-study-ready",
+    "title": "Steps to Join",
+    "section": "Becoming Study Ready",
+    "text": "Becoming Study Ready\nAfter you join the Evidence Network, we want to make sure you are ready to hit the ground running when it comes to participating in network research. We have a sample study package we would like you to run that utilizes OHDSI’s Strategus framework. All instructions for running the sample study can be found here.\nOnce you have generated results, please send an email to evidencenetwork@ohdsi.org confirming your success.",
+    "crumbs": [
+      "Steps to Join"
+    ]
+  },
+  {
+    "objectID": "Overview.html",
+    "href": "Overview.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
+  },
+  {
+    "objectID": "Overview.html#helpful-links",
+    "href": "Overview.html#helpful-links",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
+  },
+  {
+    "objectID": "getting-started/getting-started.html",
+    "href": "getting-started/getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Getting Started"
+  },
+  {
+    "objectID": "oenSummary.html",
+    "href": "oenSummary.html",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "This document provides a summary of the OHDSI Evidence Network data sources.\n\n\n\n\nConnecting using PostgreSQL driver\n\n\n\n\n\n\ntotalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
+  },
+  {
+    "objectID": "oenSummary.html#overview",
+    "href": "oenSummary.html#overview",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "Connecting using PostgreSQL driver"
+  },
+  {
+    "objectID": "oenSummary.html#total-number-of-databases",
+    "href": "oenSummary.html#total-number-of-databases",
+    "title": "OHDSI Evidence Network Summary",
+    "section": "",
+    "text": "totalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
+  },
+  {
+    "objectID": "TODO.html",
+    "href": "TODO.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "Storage of word documents\nStorage of csv files\nLink to Dynamic Mapping Tools and Metadata for Dynamic Mapping Tools\nEpic User web and other proprietary\nETL\nInventory Management"
+  },
+  {
+    "objectID": "contribute/submit_mappings.html",
+    "href": "contribute/submit_mappings.html",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
+    "crumbs": [
+      "Instructions for mapping contributions"
+    ]
+  },
+  {
+    "objectID": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
+    "href": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
+    "title": "OHDSI Evidence Network",
+    "section": "",
+    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
+    "crumbs": [
+      "Instructions for mapping contributions"
+    ]
+  },
+  {
     "objectID": "dataPartners/dpoGeneralInfo.html",
     "href": "dataPartners/dpoGeneralInfo.html",
     "title": "General Information",
@@ -54,102 +153,13 @@
     ]
   },
   {
-    "objectID": "contribute/submit_mappings.html",
-    "href": "contribute/submit_mappings.html",
-    "title": "OHDSI Evidence Network",
+    "objectID": "dataPartners/dataPartnerList.html",
+    "href": "dataPartners/dataPartnerList.html",
+    "title": "Data Partner List",
     "section": "",
-    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
+    "text": "This is the list of Data Partner Organizations currently a part of the OHDSI Evidence Network.",
     "crumbs": [
-      "Instructions for mapping contributions"
-    ]
-  },
-  {
-    "objectID": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
-    "href": "contribute/submit_mappings.html#instructions-for-mapping-contributions",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "The HSIG continues to flesh out the requirements for how collaborators can best share their semantic mappings. If you would like to contribute to this effort, please join one of our meetings, post a message to our chat in MS Teams or reach out to Melanie Philofsky.",
-    "crumbs": [
-      "Instructions for mapping contributions"
-    ]
-  },
-  {
-    "objectID": "TODO.html",
-    "href": "TODO.html",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "Storage of word documents\nStorage of csv files\nLink to Dynamic Mapping Tools and Metadata for Dynamic Mapping Tools\nEpic User web and other proprietary\nETL\nInventory Management"
-  },
-  {
-    "objectID": "oenSummary.html",
-    "href": "oenSummary.html",
-    "title": "OHDSI Evidence Network Summary",
-    "section": "",
-    "text": "This document provides a summary of the OHDSI Evidence Network data sources.\n\n\n\n\nConnecting using PostgreSQL driver\n\n\n\n\n\n\ntotalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
-  },
-  {
-    "objectID": "oenSummary.html#overview",
-    "href": "oenSummary.html#overview",
-    "title": "OHDSI Evidence Network Summary",
-    "section": "",
-    "text": "Connecting using PostgreSQL driver"
-  },
-  {
-    "objectID": "oenSummary.html#total-number-of-databases",
-    "href": "oenSummary.html#total-number-of-databases",
-    "title": "OHDSI Evidence Network Summary",
-    "section": "",
-    "text": "totalDbs\n\n            STATISTIC VALUE\n1 Number of Databases    42"
-  },
-  {
-    "objectID": "getting-started/getting-started.html",
-    "href": "getting-started/getting-started.html",
-    "title": "Getting Started",
-    "section": "",
-    "text": "Getting Started"
-  },
-  {
-    "objectID": "Overview.html",
-    "href": "Overview.html",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
-  },
-  {
-    "objectID": "Overview.html#helpful-links",
-    "href": "Overview.html#helpful-links",
-    "title": "OHDSI Evidence Network",
-    "section": "",
-    "text": "• 2024 Global Symposium\n• OHDSI home page\n• Work Groups\n• OHDSI Forums\n• Athena\n• Book of OHDSI\n• Atlas Demo\n• USAGI\n• Data Quality Dashboard\n• ACHILLES\n• OHDSI Tutorials\n• EHDEN Academy\n• ETL CDM builder\n• Sql Render\nWorking Groups\n• HSIG MS Teams\n• OMOP CDM home page\n• CDM GitHub\n• Themis MS Teams\n• Themis GitHub\n• Themis convention library\n• HADES\n• Achilles Characterization Github\n• Achilles Characterization Wiki\n• OHDSI Evidence Network\n• OMOP code on Epic user web"
-  },
-  {
-    "objectID": "dataPartners/dpoStepsToJoin.html",
-    "href": "dataPartners/dpoStepsToJoin.html",
-    "title": "Steps to Join",
-    "section": "",
-    "text": "Review the Data Partner Participation Guidelines for information on expectations for Data Partners and responsibilities of the OHDSI Coordinating Center (OCC).\nIf required, submit an IRB application based on the research protocol, which we have organized and uploaded to Github.\n\nEvidence Network Study Protocol\nExample OHDSI Evidence Network IRB Application\n\nGenerate a database profile of your OMOP CDM instance. Once the package is run, you will receive the results in Excel files.\nCompress these files into a zip folder.\nFollow the instructions to upload the zip file to our SFTP site. Once you get to this point we will furnish you with a key file to facilitate the file transfer.",
-    "crumbs": [
-      "Steps to Join"
-    ]
-  },
-  {
-    "objectID": "dataPartners/dpoStepsToJoin.html#how-to-join-the-ohdsi-evidence-network-as-a-data-partner-organization",
-    "href": "dataPartners/dpoStepsToJoin.html#how-to-join-the-ohdsi-evidence-network-as-a-data-partner-organization",
-    "title": "Steps to Join",
-    "section": "",
-    "text": "Review the Data Partner Participation Guidelines for information on expectations for Data Partners and responsibilities of the OHDSI Coordinating Center (OCC).\nIf required, submit an IRB application based on the research protocol, which we have organized and uploaded to Github.\n\nEvidence Network Study Protocol\nExample OHDSI Evidence Network IRB Application\n\nGenerate a database profile of your OMOP CDM instance. Once the package is run, you will receive the results in Excel files.\nCompress these files into a zip folder.\nFollow the instructions to upload the zip file to our SFTP site. Once you get to this point we will furnish you with a key file to facilitate the file transfer.",
-    "crumbs": [
-      "Steps to Join"
-    ]
-  },
-  {
-    "objectID": "dataPartners/dpoStepsToJoin.html#becoming-study-ready",
-    "href": "dataPartners/dpoStepsToJoin.html#becoming-study-ready",
-    "title": "Steps to Join",
-    "section": "Becoming Study Ready",
-    "text": "Becoming Study Ready\nAfter you join the Evidence Network, we want to make sure you are ready to hit the ground running when it comes to participating in network research. We have a sample study package we would like you to run that utilizes OHDSI’s Strategus framework. All instructions for running the sample study can be found here.\nOnce you have generated results, please send an email to evidencenetwork@ohdsi.org confirming your success.",
-    "crumbs": [
-      "Steps to Join"
+      "Data Partner List"
     ]
   },
   {
@@ -192,6 +202,6 @@
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "Tools\nPresentations on tools used for ETL\n\n\n  \n\n\n\nDate\nTitle\nPresenter\n\n\n\n\n2022-09-22\nSNOMED CT Model for Post-Coordination as a Way to Sustainably Represent Source Concepts in OMOP CDM\nEduard Korchmar\n\n\n2022-09-22\nSNOMED CT Model for Post-Coordination as a Way to Sustainably Represent Source Concepts in OMOP CDM\nEduard Korchmar\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Tools\nPresentations on tools used for ETL\n\n\n  \n\n\n\nDate\nTitle\nPresenter\n\n\n\n\n2022-09-22\nSNOMED CT Model for Post-Coordination as a Way to Sustainably Represent Source Concepts in OMOP CDM\nEduard Korchmar\n\n\n2022-09-22\nSNOMED CT Model for Post-Coordination as a Way to Sustainably Represent Source Concepts in OMOP CDM\nEduard Korchmar\n\n\n\n\n\nNo matching items"
   }
 ]
