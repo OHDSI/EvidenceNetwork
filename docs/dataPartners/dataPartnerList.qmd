@@ -10,9 +10,9 @@ This is the list of Data Partner Organizations currently a part of the OHDSI Evi
 
 library(dplyr)
 
-dpos <- readxl::read_xlsx(Sys.getenv(OEN_NETWORK_NAMES_FILE), sheet = "OEN Data Partner Orgs")
+dpos <- readxl::read_xlsx(Sys.getenv("OEN_NETWORK_NAMES_FILE"), sheet = "OEN Data Partner Orgs")
 
-dataSources <- readxl::read_xlsx(Sys.getenv(OEN_NETWORK_NAMES_FILE), sheet = "OEN Data Sources")
+dataSources <- readxl::read_xlsx(Sys.getenv("OEN_NETWORK_NAMES_FILE"), sheet = "OEN Data Sources")
 
 dpoTable <- dataSources %>%
   filter(Notes != 'Not allowed' | is.na(Notes)) %>%
