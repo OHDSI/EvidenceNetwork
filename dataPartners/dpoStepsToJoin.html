@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,9 +36,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-848b0ac4624f60699d65088876b2146c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-42ed9c729b9b0170ae11ec907aff1cff.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-848b0ac4624f60699d65088876b2146c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-daf5a1dde25e0db2beda5da356670818.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d2620978ef9238ef3a0f51e500e048d3.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-daf5a1dde25e0db2beda5da356670818.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-55390e368bb110f0e3c2de8a927cf001.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -231,6 +231,7 @@ ul.task-list li input[type="checkbox"] {
       toggleColorMode(toAlternate);
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
     };
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
@@ -413,9 +414,11 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/blob/main/docs/EvidenceNetworkStudyProtocol_v1.0.pdf">Evidence Network Study Protocol</a></li>
 <li><a href="https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/blob/main/docs/OHDSI_Evidence_Network_IRB_Application.pdf">Example OHDSI Evidence Network IRB Application</a></li>
 </ol></li>
-<li>Generate a database profile of your OMOP CDM instance. Once the package is run, you will receive the results in Excel files.</li>
-<li>Compress these files into a zip folder.</li>
-<li><a href="https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/tree/main?tab=readme-ov-file#sharing-results">Follow the instructions</a> to upload the zip file to our SFTP site. Once you get to this point we will furnish you with a key file to facilitate the file transfer.</li>
+<li>Generate a database profile of your OMOP CDM instance using the <a href="https://github.com/ohdsi-studies/OhdsiEvidenceNetwork?tab=readme-ov-file#how-to-run-the-study-and-participate-in-the-network">instructions on our study page</a>. Once the package is run, you will receive the results either in the form of three csv files or a zip file, depending on your operating system.
+<ol type="a">
+<li>If the results are returned as three csv files, compress these files into a zip folder.</li>
+</ol></li>
+<li><a href="https://github.com/ohdsi-studies/OhdsiEvidenceNetwork/tree/main?tab=readme-ov-file#sharing-results">Follow the instructions</a> to upload the zip file to our SFTP site. Once you get to this point email us at evidencenetwork@ohdsi.org and we will furnish you with a key file to facilitate the file transfer.</li>
 </ol>
 </section>
 <section id="becoming-study-ready" class="level2">
