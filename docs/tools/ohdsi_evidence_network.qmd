@@ -18,6 +18,9 @@ library(DatabaseConnector)
 library(SqlRender)
 library(treemap)
 library(igraph)
+library(dplyr)
+library(scales)     # for label formatting
+library(viridis)
 
 # Create variables
 oenDatabaseSchema <- "ohdsi_evidence_network"
@@ -243,7 +246,9 @@ plotly::ggplotly(yob_plot)
 
 ```
 
-## Race Distribution
+## Race and Ethnicity Distribution {.tabset}
+
+### Race Distribution
 
 ```{r echo=FALSE}
 ## Race and Ethnicity {.tabset}
@@ -284,7 +289,7 @@ plotly::ggplotly(race_plot)
 
 ```
 
-## Ethnicity Distribution
+### Ethnicity Distribution
 
 ```{r echo=FALSE}
 
@@ -325,21 +330,144 @@ plotly::ggplotly(ethnicity_plot)
 ```
 
 
+## Clinical Context {.tabset}
 
+### Visit Representation
 
 ```{r echo=FALSE} 
-## Data Coverage {.tabset}
 
-### OMOP Domains
+sql <-  "select dp.oen_id,max(count_value) as person_count, a.total_person_count, 
+		max(count_value) / a.total_person_count as prop,
+		visit_ancestor_concept_name
+          from @oen_database_schema.db_profiles dp 
+          join (
+          	select oen_id,count_value as total_person_count
+          	from @oen_database_schema.db_profiles dp 
+            where analysis_id = 1
+          )a
+          on dp.oen_id = a.oen_id
+where analysis_id = 200
+group by dp.oen_id, visit_ancestor_concept_name, a.total_person_count"
+    
+    renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+    conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+    
+    dbVisits <- DatabaseConnector::querySql(conn, renderedSql)
 
-# Placeholder: Replace with actual OMOP data coverage
-# domain_coverage <- data.frame( Domain = c("Condition", "Drug
-# Exposure", "Observation", "Measurement", "Procedure"), Records =
-# c(1500000, 1200000, 900000, 1100000, 800000) )
-# 
-# domain_plot <- ggplot(domain_coverage, aes(x = Domain, y = Records,
-# fill = Domain)) + geom_bar(stat = "identity") + labs(title = "OMOP CDM
-# Data Coverage", x = "Domain", y = "Records Count") + theme_minimal()
-# 
-# plotly::ggplotly(domain_plot)
+DatabaseConnector::disconnect(conn)
+
+dbVisits <- dbVisits %>%
+  mutate(,
+    label = paste0(
+      "Partner: ", OEN_ID, "<br>",
+      "Visit Type: ", VISIT_ANCESTOR_CONCEPT_NAME, "<br>",
+      "Proportion Persons: ", percent(PROP, accuracy = 0.1)
+    )
+  )
+
+# Build the ggplot
+visit_plot <- ggplot(dbVisits, aes(x = VISIT_ANCESTOR_CONCEPT_NAME, y = OEN_ID, fill = PROP, text = label)) +
+  geom_tile(color = "white") +
+  scale_fill_viridis_c(
+    name = "Proportion of persons",
+    guide = guide_colorbar(barwidth = 10, barheight = 1)
+  ) +
+  labs(
+    title = "Proportion of Persons by Data Partner and Visit Type",
+    x = "Visit Concept",
+    y = "Data Partner (OEN_ID)"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 30, hjust = 1),
+    legend.position = "right"
+  )
+
+# Convert to interactive plot with custom tooltip
+plotly::ggplotly(visit_plot, tooltip = "text")
+
+```
+
+### Domain Coverage
+
+```{r echo=FALSE} 
+
+sql <-  "select oen_id, 'prop_persons_w_condition' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 = '1000000'
+union
+select oen_id, 'prop_persons_w_drugs' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 in ('0100000','100000')
+union
+select oen_id, 'prop_persons_w_devices' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 in ('0010000','10000')
+union
+select oen_id, 'prop_persons_w_measurements' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 in ('0001000','1000')
+union
+select oen_id, 'prop_persons_w_death' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 in ('0000100','100')
+union
+select oen_id, 'prop_persons_w_procedures' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 in ('0000010','10')
+union
+select oen_id, 'prop_persons_w_observations' as domain, stratum_2
+from @oen_database_schema.db_profiles dp 
+where analysis_id = 2004
+ and stratum_1 in ('0000001','1')
+ "
+    
+    renderedSql <- SqlRender::render(sql, oen_database_schema = oenDatabaseSchema)
+    conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
+    
+    dbDomains <- DatabaseConnector::querySql(conn, renderedSql)
+
+DatabaseConnector::disconnect(conn)
+
+# Create heatmap with ggplot
+dbDomains <- dbDomains %>%
+  mutate(
+    STRATUM_2 = as.numeric(STRATUM_2),
+    DOMAIN = gsub("prop_persons_w_", "", DOMAIN),
+    DOMAIN = gsub("_", " ", DOMAIN),
+    DOMAIN = tools::toTitleCase(DOMAIN),
+    tooltip_text = paste0(
+      "Data Partner: ", OEN_ID, "<br>",
+      "Domain: ", DOMAIN, "<br>",
+      "Coverage: ", percent(STRATUM_2, accuracy = 0.1)
+    )
+  )
+
+# Create ggplot object with tooltip text
+domain_plot <- ggplot(dbDomains, aes(x = DOMAIN, y = OEN_ID, fill = STRATUM_2, text = tooltip_text)) +
+  geom_tile(color = "white") +
+  scale_fill_viridis_c(
+    limits = c(0, 1),
+    labels = label_percent(accuracy = 1),
+    name = "Coverage (%)"
+  ) +
+  labs(
+    title = "Proportion of Persons with a Record in Each OMOP Domain",
+    x = "OMOP Domain",
+    y = "Data Partner (OEN_ID)"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 30, hjust = 1),
+    axis.text.y = element_text(size = 6)
+  )
+
+# Convert to interactive plotly chart with formatted tooltip
+ggplotly(domain_plot, tooltip = "text")
 ```
