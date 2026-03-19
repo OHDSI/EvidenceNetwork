@@ -46,7 +46,7 @@ conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
 totalDbs <- DatabaseConnector::querySql(conn, renderedSql)
 DatabaseConnector::disconnect(conn)
 
-totalDbsValue <- totalDbs$VALUE[1]
+totalDbsValue <- totalDbs$value[1]
 
 # totalDbsTile <- flexdashboard::valueBox(
 #   value = totalDbsValue,
@@ -69,7 +69,7 @@ conn <- DatabaseConnector::connect(dbProfileConnectionDetails)
 totalInstitutions <- DatabaseConnector::querySql(conn, renderedSql)
 DatabaseConnector::disconnect(conn)
 
-totalInstitutionsValue <- totalInstitutions$TOTAL_INSTITUTIONS[1]
+totalInstitutionsValue <- totalInstitutions$total_institutions[1]
 
 # totalInsTile <- flexdashboard::valueBox(
 #   value = totalInstitutionsValue,
