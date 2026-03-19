@@ -127,13 +127,13 @@ dbDataTypes <- DatabaseConnector::querySql(conn, renderedSql)
 DatabaseConnector::disconnect(conn)
 
 dbDataTypes <- dbDataTypes %>%
-  mutate(DATA_TYPE = factor(DATA_TYPE, levels = DATA_TYPE[order(-DB_COUNT)]))
+  mutate(data_type = factor(data_type, levels = data_type[order(-db_count)]))
 
   dbDataTypesPlot <- plot_ly(
     dbDataTypes,
     type = "treemap",
-    labels = ~DATA_TYPE,
-    values = ~DB_COUNT,
+    labels = ~data_type,
+    values = ~db_count,
     parents = NA,
     textinfo = "label+value+percent entry",
     textposition = "middle center",
@@ -359,14 +359,14 @@ DatabaseConnector::disconnect(conn)
 dbVisits <- dbVisits %>%
   mutate(,
     label = paste0(
-      "Partner: ", OEN_ID, "<br>",
-      "Visit Type: ", VISIT_ANCESTOR_CONCEPT_NAME, "<br>",
-      "Proportion Persons: ", percent(PROP, accuracy = 0.1)
+      "Partner: ", oen_id, "<br>",
+      "Visit Type: ", visit_ancestor_concept_name, "<br>",
+      "Proportion Persons: ", percent(prop, accuracy = 0.1)
     )
   )
 
 # Build the ggplot
-visit_plot <- ggplot(dbVisits, aes(x = VISIT_ANCESTOR_CONCEPT_NAME, y = OEN_ID, fill = PROP, text = label)) +
+visit_plot <- ggplot(dbVisits, aes(x = visit_ancestor_concept_name, y = oen_id, fill = prop, text = label)) +
   geom_tile(color = "white") +
   scale_fill_viridis_c(
     name = "Proportion of persons",
@@ -438,19 +438,19 @@ DatabaseConnector::disconnect(conn)
 # Create heatmap with ggplot
 dbDomains <- dbDomains %>%
   mutate(
-    STRATUM_2 = as.numeric(STRATUM_2),
-    DOMAIN = gsub("prop_persons_w_", "", DOMAIN),
-    DOMAIN = gsub("_", " ", DOMAIN),
-    DOMAIN = tools::toTitleCase(DOMAIN),
+    stratum_2 = as.numeric(stratum_2),
+    domain = gsub("prop_persons_w_", "", domain),
+    domain = gsub("_", " ", domain),
+    domain = tools::toTitleCase(domain),
     tooltip_text = paste0(
-      "Data Partner: ", OEN_ID, "<br>",
-      "Domain: ", DOMAIN, "<br>",
-      "Coverage: ", percent(STRATUM_2, accuracy = 0.1)
+      "Data Partner: ", oen_id, "<br>",
+      "Domain: ", domain, "<br>",
+      "Coverage: ", percent(stratum_2, accuracy = 0.1)
     )
   )
 
 # Create ggplot object with tooltip text
-domain_plot <- ggplot(dbDomains, aes(x = DOMAIN, y = OEN_ID, fill = STRATUM_2, text = tooltip_text)) +
+domain_plot <- ggplot(dbDomains, aes(x = domain, y = oen_id, fill = stratum_2, text = tooltip_text)) +
   geom_tile(color = "white") +
   scale_fill_viridis_c(
     limits = c(0, 1),
